@@ -95,6 +95,50 @@
     color: #faf6ef !important;
   }
 
+  /* ── PREZZO ── */
+  .rq-price-box {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(242,232,213,0.25);
+    border-radius: 16px;
+    padding: 20px 24px 16px;
+    margin: 0 0 24px;
+  }
+  .rq-price-label {
+    font-size: 14px;
+    color: #f2e8d5;
+    opacity: 0.85;
+    margin: 0 0 10px;
+    line-height: 1.5;
+  }
+  .rq-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  .rq-price-old {
+    font-size: 26px;
+    font-weight: 600;
+    color: #f2e8d5;
+    opacity: 0.45;
+    text-decoration: line-through;
+  }
+  .rq-price-new {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #b8912a;
+    line-height: 1;
+  }
+  .rq-price-note {
+    font-size: 13px;
+    color: #8a9e82;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin: 0;
+  }
+
   @media (max-width: 600px) {
     .rq-hero, .rq-body, .rq-cta { padding: 28px 20px; }
     .rq-hero h1 { font-size: 28px; }
@@ -125,8 +169,18 @@
   <!-- CTA -->
   <div class="rq-cta">
     <p>🌿 <strong style="color:#f2e8d5;">Sei pronta a iniziare?</strong><br>Regalati una settimana dedicata al tuo benessere.</p>
+
+    <div class="rq-price-box">
+      <p class="rq-price-label">Perché hai completato il quiz, oggi il Reset 7 Giorni è tuo a:</p>
+      <div class="rq-price-row">
+        <span class="rq-price-old">€49</span>
+        <span class="rq-price-new">€37</span>
+      </div>
+      <p class="rq-price-note">Prezzo speciale riservato a chi ha fatto il test 🎁</p>
+    </div>
+
     <a class="rq-btn" href="https://metodorinata.it/prodotto/reset-7-giorni/" target="_blank" rel="noopener">
-      👉 Inizia il Reset 7 Giorni
+      👉 Inizia il Reset 7 Giorni — €37
     </a>
   </div>
 
