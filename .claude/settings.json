@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '\\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n💾 FINE SESSIONE — SALVATAGGIO AUTOMATICO RICHIESTO\\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\nAggiornare nel Google Drive (cartella MARISA PAGLIUCA):\\n1. LOG_$(date +%Y-%m-%d).md — log della sessione di oggi\\n2. PROJECT_STATUS.md — se lo stato è cambiato\\n3. TASKS.md — task completati e nuovi\\n4. DECISIONI.md — decisioni prese oggi\\n\\nUSARE il comando /fine per salvare tutto in un colpo solo.\\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "mcp__Google_Drive*",
+      "mcp__github*"
+    ]
+  }
+}
