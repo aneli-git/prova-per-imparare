@@ -1,0 +1,406 @@
+{
+  "version": "0.4",
+  "title": "Percorsi — Metodo RINATA",
+  "type": "page",
+  "content": [
+
+    {
+      "id": "pc_hero",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#faf6ef",
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "60", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "pc_hero_in",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "pc_tag",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "I Percorsi RINATA",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#8a9e82",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "600",
+                "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "pc_h1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Scegli il tuo punto di partenza",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#3d3530",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 54 },
+                "typography_font_weight": "600",
+                "typography_line_height": { "unit": "em", "size": 1.2 }
+              }
+            },
+            {
+              "id": "pc_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Ogni percorso è progettato per incontrarti dove sei adesso — e portarti dove vuoi essere. Inizia gratis, approfondisci quando sei pronta.</p>",
+                "text_color": "#7a6435",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 18 },
+                "typography_line_height": { "unit": "em", "size": 1.8 }
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pc_prodotti",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": { "unit": "px", "top": "60", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "pc_prod_in",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "gap": "extended",
+            "align_items": "stretch",
+            "flex_wrap": "wrap",
+            "justify_content": "center"
+          },
+          "elements": [
+            {
+              "id": "pc_reset7",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "flex-start",
+                "gap": "narrow",
+                "width": { "unit": "px", "size": 420 },
+                "background_background": "classic",
+                "background_color": "#ffffff",
+                "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                "border_border": "solid",
+                "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                "border_color": "#b8912a",
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0, "vertical": 8, "blur": 40, "spread": 0,
+                  "color": "rgba(122,100,53,0.12)", "position": "outside"
+                }
+              },
+              "elements": [
+                {
+                  "id": "r7_img",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "https://metodorinata.it/wp-content/uploads/2026/06/copertina_reset7-01-1.webp",
+                      "alt": "Reset 7 Giorni"
+                    },
+                    "image_border_radius": { "unit": "px", "top": "18", "right": "18", "bottom": "0", "left": "0", "isLinked": false },
+                    "width": { "unit": "%", "size": 100 }
+                  }
+                },
+                {
+                  "id": "r7_body",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "gap": "narrow",
+                    "padding": { "unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "r7_badge",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>⭐ <strong>Più scelto</strong> &nbsp;|&nbsp; <del>€49</del> <strong style=\"color:#b8912a;\">€37</strong> — Risparmia €12</p>",
+                        "text_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 14 }
+                      }
+                    },
+                    {
+                      "id": "r7_h3",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Reset 7 Giorni",
+                        "header_size": "h3",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 32 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "r7_desc",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Il percorso completo di una settimana. Piano alimentare, pratiche quotidiane di Neuroyoga, gestione dello stress e abitudini che restano.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      }
+                    },
+                    {
+                      "id": "r7_list",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<ul><li>✓ Piano alimentare 7 giorni completo</li><li>✓ Gestione fame nervosa e stress</li><li>✓ Ricette anti-infiammatorie</li><li>✓ Accesso immediato dopo il pagamento</li></ul>",
+                        "text_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 2 }
+                      }
+                    },
+                    {
+                      "id": "r7_btn",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Acquista ora — €37",
+                        "link": { "url": "https://metodorinata.it/prodotto/reset-7-giorni/", "is_external": false, "nofollow": false },
+                        "align": "left",
+                        "background_color": "#b8912a",
+                        "button_text_color": "#faf6ef",
+                        "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                        "padding": { "unit": "px", "top": "16", "right": "36", "bottom": "16", "left": "36", "isLinked": false },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_font_weight": "600",
+                        "hover_background_color": "#7a6435"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pc_retreat",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "flex-start",
+                "gap": "narrow",
+                "width": { "unit": "px", "size": 420 },
+                "background_background": "classic",
+                "background_color": "#faf6ef",
+                "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                "border_border": "solid",
+                "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                "border_color": "#f2e8d5",
+                "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false }
+              },
+              "elements": [
+                {
+                  "id": "ret_ico",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "🌸", "header_size": "p", "typography_font_size": { "unit": "px", "size": 48 } }
+                },
+                {
+                  "id": "ret_badge",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong>Prossimamente</strong></p>",
+                    "text_color": "#8a9e82",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 13 },
+                    "typography_font_weight": "600",
+                    "typography_letter_spacing": { "unit": "em", "size": 0.15 },
+                    "typography_text_transform": "uppercase"
+                  }
+                },
+                {
+                  "id": "ret_h3",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Day Retreat",
+                    "header_size": "h3",
+                    "title_color": "#3d3530",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": { "unit": "px", "size": 32 },
+                    "typography_font_weight": "600"
+                  }
+                },
+                {
+                  "id": "ret_desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Una giornata immersiva nel Fit Lab di Pietrasanta. Neuroyoga, alimentazione consapevole, pratiche di gruppo e trasformazione profonda.</p>",
+                    "text_color": "#7a6435",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 15 },
+                    "typography_line_height": { "unit": "em", "size": 1.7 }
+                  }
+                },
+                {
+                  "id": "ret_list",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<ul><li>✓ Sessione Neuroyoga guidata</li><li>✓ Workshop alimentazione funzionale</li><li>✓ Pranzo anti-infiammatorio incluso</li><li>✓ Fit Lab Pietrasanta</li></ul>",
+                    "text_color": "#3d3530",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 15 },
+                    "typography_line_height": { "unit": "em", "size": 2 }
+                  }
+                },
+                {
+                  "id": "ret_btn",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Iscrivimi alla lista d'attesa",
+                    "link": { "url": "/contatti/", "is_external": false, "nofollow": false },
+                    "align": "left",
+                    "background_color": "transparent",
+                    "button_text_color": "#b8912a",
+                    "border_border": "solid",
+                    "border_color": "#b8912a",
+                    "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                    "padding": { "unit": "px", "top": "16", "right": "36", "bottom": "16", "left": "36", "isLinked": false },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 15 },
+                    "typography_font_weight": "600",
+                    "hover_background_color": "#b8912a",
+                    "hover_button_text_color": "#faf6ef"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pc_free_cta",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#f2e8d5",
+        "padding": { "unit": "px", "top": "60", "right": "20", "bottom": "60", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "pf_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "default"
+          },
+          "elements": [
+            {
+              "id": "pf_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Non sai da dove iniziare?",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#3d3530",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 38 },
+                "typography_font_weight": "600"
+              }
+            },
+            {
+              "id": "pf_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Inizia sempre dal Reset 3 Giorni gratuito. È il modo più semplice per capire se il Metodo RINATA fa per te — senza rischi, senza impegno.</p>",
+                "text_color": "#7a6435",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 17 },
+                "typography_line_height": { "unit": "em", "size": 1.8 }
+              }
+            },
+            {
+              "id": "pf_btn",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "🌿 Inizia gratis adesso",
+                "link": { "url": "https://mentecorpoenergia.it/rinata-reset-3-giorni-b/", "is_external": true, "nofollow": false },
+                "align": "center",
+                "background_color": "#b8912a",
+                "button_text_color": "#faf6ef",
+                "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                "padding": { "unit": "px", "top": "18", "right": "44", "bottom": "18", "left": "44", "isLinked": false },
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 16 },
+                "typography_font_weight": "600",
+                "hover_background_color": "#7a6435"
+              }
+            }
+          ]
+        }
+      ]
+    }
+
+  ],
+  "page_settings": {
+    "template": "elementor_canvas",
+    "hide_title": "yes"
+  }
+}

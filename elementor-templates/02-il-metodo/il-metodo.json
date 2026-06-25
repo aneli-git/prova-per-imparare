@@ -1,0 +1,1028 @@
+{
+  "version": "0.4",
+  "title": "Il Metodo — Metodo RINATA",
+  "type": "page",
+  "content": [
+
+    {
+      "id": "m_hero",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#faf6ef",
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false },
+        "min_height": { "unit": "vh", "size": 70 },
+        "align_items": "stretch"
+      },
+      "elements": [
+        {
+          "id": "m_hero_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "m_hero_text",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "flex-start",
+                "gap": "extended",
+                "width": { "unit": "%", "size": 55 }
+              },
+              "elements": [
+                {
+                  "id": "m_tag",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Il Metodo RINATA 40+",
+                    "header_size": "p",
+                    "align": "left",
+                    "title_color": "#8a9e82",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 13 },
+                    "typography_font_weight": "600",
+                    "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                    "typography_text_transform": "uppercase"
+                  }
+                },
+                {
+                  "id": "m_h1",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Il tuo corpo non ti tradisce.<br>Ti sta <em>parlando.</em>",
+                    "header_size": "h1",
+                    "align": "left",
+                    "title_color": "#3d3530",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": { "unit": "px", "size": 54 },
+                    "typography_font_weight": "600",
+                    "typography_line_height": { "unit": "em", "size": 1.18 }
+                  }
+                },
+                {
+                  "id": "m_lead",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Il Metodo RINATA 40+ ti insegna a leggerne il linguaggio — e a rispondere in modo diverso. Non terapie. Non diete. Azioni semplici che restituiscono energia, leggerezza e controllo.</p>",
+                    "text_color": "#7a6435",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 18 },
+                    "typography_line_height": { "unit": "em", "size": 1.8 }
+                  }
+                },
+                {
+                  "id": "m_hero_btns",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row",
+                    "gap": "narrow",
+                    "flex_wrap": "wrap"
+                  },
+                  "elements": [
+                    {
+                      "id": "m_btn1",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Scopri i percorsi",
+                        "link": { "url": "/percorsi/", "is_external": false, "nofollow": false },
+                        "align": "center",
+                        "background_color": "#b8912a",
+                        "button_text_color": "#faf6ef",
+                        "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                        "padding": { "unit": "px", "top": "16", "right": "36", "bottom": "16", "left": "36", "isLinked": false },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_font_weight": "600",
+                        "hover_background_color": "#7a6435"
+                      }
+                    },
+                    {
+                      "id": "m_btn2",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Inizia gratis →",
+                        "link": { "url": "https://mentecorpoenergia.it/rinata-reset-3-giorni/", "is_external": true, "nofollow": false },
+                        "align": "center",
+                        "background_color": "transparent",
+                        "button_text_color": "#b8912a",
+                        "border_border": "solid",
+                        "border_color": "#b8912a",
+                        "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                        "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                        "padding": { "unit": "px", "top": "16", "right": "36", "bottom": "16", "left": "36", "isLinked": false },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_font_weight": "600"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "m_hero_quote_col",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "center",
+                "width": { "unit": "%", "size": 45 },
+                "background_background": "classic",
+                "background_color": "#ffffff",
+                "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                "padding": { "unit": "px", "top": "40", "right": "36", "bottom": "40", "left": "36", "isLinked": false }
+              },
+              "elements": [
+                {
+                  "id": "m_hero_q",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align:center;\">\"Non si tratta di sentire di più. Si tratta di ascoltare meglio — e finalmente rispondere in modo diverso.\"</p>",
+                    "text_color": "#3d3530",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": { "unit": "px", "size": 22 },
+                    "typography_font_style": "italic",
+                    "typography_line_height": { "unit": "em", "size": 1.7 }
+                  }
+                },
+                {
+                  "id": "m_hero_author",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "— Marisa Pagliuca, creatrice del Metodo RINATA",
+                    "header_size": "p",
+                    "align": "center",
+                    "title_color": "#b8912a",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 14 },
+                    "typography_font_weight": "600"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "m_problemi",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "m_prob_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "m_prob_tag",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Cosa succede davvero dopo i 40",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#3d3530",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 42 },
+                "typography_font_weight": "600"
+              }
+            },
+            {
+              "id": "m_prob_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Non è debolezza. Non è età. È il sistema nervoso sotto pressione costante che cambia le regole del gioco — e nessuno te lo ha spiegato.</p>",
+                "text_color": "#7a6435",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 17 },
+                "typography_line_height": { "unit": "em", "size": 1.8 }
+              }
+            },
+            {
+              "id": "m_prob_cards",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "gap": "default",
+                "align_items": "stretch",
+                "flex_wrap": "wrap"
+              },
+              "elements": [
+                {
+                  "id": "m_prob1",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 32 },
+                    "background_background": "classic",
+                    "background_color": "#faf6ef",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "p1_ico",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "🧠", "header_size": "p", "typography_font_size": { "unit": "px", "size": 36 } }
+                    },
+                    {
+                      "id": "p1_t",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Il cortisolo sale",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 26 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "p1_tx",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Lo stress cronico aumenta il cortisolo, che blocca il metabolismo, gonfia l'addome e alimenta la fame nervosa — indipendentemente da quello che mangi.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.75 }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "m_prob2",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 32 },
+                    "background_background": "classic",
+                    "background_color": "#faf6ef",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "p2_ico",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "⚡", "header_size": "p", "typography_font_size": { "unit": "px", "size": 36 } }
+                    },
+                    {
+                      "id": "p2_t",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Gli estrogeni calano",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 26 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "p2_tx",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Con la peri-menopausa cambiano sonno, umore, distribuzione del peso e livelli di energia. Il corpo non risponde più come prima — perché non è più come prima.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.75 }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "m_prob3",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 32 },
+                    "background_background": "classic",
+                    "background_color": "#faf6ef",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "p3_ico",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "🔄", "header_size": "p", "typography_font_size": { "unit": "px", "size": 36 } }
+                    },
+                    {
+                      "id": "p3_t",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Il loop non si spezza",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 26 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "p3_tx",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Stanchezza → scelte sbagliate → senso di colpa → più stress → più cortisolo. Le diete tradizionali peggiorano il ciclo invece di spezzarlo.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.75 }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "m_cose",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#faf6ef",
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "m_cose_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "cose_tag",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Cos'è il Metodo",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#8a9e82",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "600",
+                "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "cose_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Psicobiologia, Neuroyoga e abitudini che reggono nel tempo.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#3d3530",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 40 },
+                "typography_font_weight": "600",
+                "typography_line_height": { "unit": "em", "size": 1.3 }
+              }
+            },
+            {
+              "id": "cose_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Il Metodo RINATA 40+ non è un programma di dieta. È un sistema che lavora su tre livelli simultaneamente: quello biologico (nutrizione anti-infiammatoria), quello neurologico (regolazione del sistema nervoso) e quello comportamentale (abitudini micro che non richiedono forza di volontà).</p><p style=\"text-align:center;\">Ho costruito questo metodo su me stessa — prima che su qualsiasi altra donna. L'ho testato dal di dentro, durante la mia peri-menopausa. Il risultato? Un percorso che funziona proprio perché non lotta contro il corpo — lo ascolta.</p>",
+                "text_color": "#7a6435",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 17 },
+                "typography_line_height": { "unit": "em", "size": 1.8 }
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "m_pilastri",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "pil_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "pil_tag",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "I 3 Pilastri",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#8a9e82",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "600",
+                "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "pil_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ogni pilastro ha uno scopo preciso.<br>Insieme, cambiano tutto.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#3d3530",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 40 },
+                "typography_font_weight": "600",
+                "typography_line_height": { "unit": "em", "size": 1.3 }
+              }
+            },
+            {
+              "id": "pil_card1",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "align_items": "flex-start",
+                "gap": "extended",
+                "width": { "unit": "%", "size": 100 },
+                "background_background": "classic",
+                "background_color": "#faf6ef",
+                "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                "padding": { "unit": "px", "top": "40", "right": "40", "bottom": "40", "left": "40", "isLinked": false }
+              },
+              "elements": [
+                {
+                  "id": "pc1_num",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "01",
+                    "header_size": "h2",
+                    "title_color": "#b8912a",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": { "unit": "px", "size": 60 },
+                    "typography_font_weight": "300"
+                  }
+                },
+                {
+                  "id": "pc1_body",
+                  "elType": "container",
+                  "settings": { "flex_direction": "column", "gap": "narrow" },
+                  "elements": [
+                    {
+                      "id": "pc1_icon",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "🥗", "header_size": "p", "typography_font_size": { "unit": "px", "size": 30 } }
+                    },
+                    {
+                      "id": "pc1_h3",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Alimentazione Consapevole",
+                        "header_size": "h3",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 30 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "pc1_tx",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Non conti le calorie. Non elimini i carboidrati. Non soffri la fame. Impari invece a leggere i segnali del tuo corpo e ad abbinare i nutrienti in modo da spegnere l'infiammazione cronica — quella che causa gonfiore, fame nervosa e ritenzione idrica dopo i 40.</p><p>La base è semplice: il tuo intestino produce il 90% della serotonina. Nutri l'intestino, regoli l'umore. Regoli l'umore, regoli la fame. Non è magia — è fisiologia.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.75 }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pil_card2",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "align_items": "flex-start",
+                "gap": "extended",
+                "width": { "unit": "%", "size": 100 },
+                "background_background": "classic",
+                "background_color": "#faf6ef",
+                "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                "padding": { "unit": "px", "top": "40", "right": "40", "bottom": "40", "left": "40", "isLinked": false }
+              },
+              "elements": [
+                {
+                  "id": "pc2_num",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "02",
+                    "header_size": "h2",
+                    "title_color": "#b8912a",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": { "unit": "px", "size": 60 },
+                    "typography_font_weight": "300"
+                  }
+                },
+                {
+                  "id": "pc2_body",
+                  "elType": "container",
+                  "settings": { "flex_direction": "column", "gap": "narrow" },
+                  "elements": [
+                    {
+                      "id": "pc2_icon",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "🧘", "header_size": "p", "typography_font_size": { "unit": "px", "size": 30 } }
+                    },
+                    {
+                      "id": "pc2_h3",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Equilibrio Mente-Corpo",
+                        "header_size": "h3",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 30 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "pc2_tx",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>La fame nervosa non nasce nello stomaco. Nasce nel sistema nervoso sotto stress. Il Pilastro 2 lavora direttamente lì: con pratiche di Neuroyoga e respirazione mirata che abbassano il cortisolo in 3 minuti — abbastanza da spezzare il loop automatico prima che diventi un'abbuffata.</p><p>Non è meditazione teorica. È neuroscienza pratica: quando attivi il nervo vago, il corpo smette di essere in modalità emergenza. La leggerezza non è una promessa — è una risposta biologica.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.75 }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pil_card3",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "align_items": "flex-start",
+                "gap": "extended",
+                "width": { "unit": "%", "size": 100 },
+                "background_background": "classic",
+                "background_color": "#faf6ef",
+                "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                "padding": { "unit": "px", "top": "40", "right": "40", "bottom": "40", "left": "40", "isLinked": false }
+              },
+              "elements": [
+                {
+                  "id": "pc3_num",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "03",
+                    "header_size": "h2",
+                    "title_color": "#b8912a",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": { "unit": "px", "size": 60 },
+                    "typography_font_weight": "300"
+                  }
+                },
+                {
+                  "id": "pc3_body",
+                  "elType": "container",
+                  "settings": { "flex_direction": "column", "gap": "narrow" },
+                  "elements": [
+                    {
+                      "id": "pc3_icon",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "🌱", "header_size": "p", "typography_font_size": { "unit": "px", "size": 30 } }
+                    },
+                    {
+                      "id": "pc3_h3",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Abitudini Sostenibili",
+                        "header_size": "h3",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 30 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "pc3_tx",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Le diete falliscono perché richiedono forza di volontà — una risorsa esauribile. Il Pilastro 3 costruisce abitudini che non richiedono volontà, perché diventano automatismi positivi integrati nella tua vita reale: al lavoro, in famiglia, in vacanza.</p><p>Chiamo questi gesti \"Mini Reset\": interventi da 2-10 minuti che cumulano effetto nel tempo. Non cambia la giornata in un giorno. Cambia il corpo in 90 giorni — senza stravolgere niente.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.75 }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "m_prima_dopo",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#f2e8d5",
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "pd_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "pd_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Cosa cambia davvero",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#3d3530",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 42 },
+                "typography_font_weight": "600"
+              }
+            },
+            {
+              "id": "pd_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Non promesse. Risultati che le donne descrivono con le loro parole — già nelle prime settimane.</p>",
+                "text_color": "#7a6435",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 17 }
+              }
+            },
+            {
+              "id": "pd_cols",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "gap": "default",
+                "align_items": "stretch",
+                "flex_wrap": "wrap"
+              },
+              "elements": [
+                {
+                  "id": "pd_before",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 48 },
+                    "background_background": "classic",
+                    "background_color": "#ffffff",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "before_title",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Prima del Metodo",
+                        "header_size": "h3",
+                        "title_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 24 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "before_list",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<ul><li>Mi sveglio stanca anche dopo 8 ore di sonno</li><li>La pancia gonfia già dal mattino</li><li>Alle 16 ho una fame che non si spiega</li><li>Mi sento fuori controllo con il cibo</li><li>Il corpo non è più mio</li><li>So cosa dovrei fare ma non riesco a farlo</li></ul>",
+                        "text_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 2 }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "pd_after",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 48 },
+                    "background_background": "classic",
+                    "background_color": "#3d3530",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "after_title",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Con il Metodo RINATA",
+                        "header_size": "h3",
+                        "title_color": "#f2e8d5",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 24 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "after_list",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<ul><li>Mi sveglio riposata e con energia per tutta la mattina</li><li>La pancia è piatta e mi sento leggera</li><li>La fame pomeridiana è sparita</li><li>Scelgo quello che voglio — non quello che mi comanda il cortisolo</li><li>Ho ritrovato un rapporto di fiducia con il mio corpo</li><li>Le abitudini sono automatiche — non ci penso più</li></ul>",
+                        "text_color": "#f2e8d5",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 2 }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "m_cta",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "gradient",
+        "background_color": "#3d3530",
+        "background_color_b": "#5c4a3a",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": { "unit": "deg", "size": 135 },
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "m_cta_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "m_cta_tag",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Pronta a iniziare?",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#8a9e82",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "600",
+                "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "m_cta_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Scegli il percorso giusto per te.",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#f2e8d5",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 46 },
+                "typography_font_weight": "600"
+              }
+            },
+            {
+              "id": "m_cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Dal Reset gratuito di 3 giorni al programma completo — ogni donna parte da dove si trova.</p>",
+                "text_color": "#f2e8d5",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 17 },
+                "typography_line_height": { "unit": "em", "size": 1.8 }
+              }
+            },
+            {
+              "id": "m_cta_btns",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "gap": "narrow",
+                "align_items": "center",
+                "justify_content": "center",
+                "flex_wrap": "wrap"
+              },
+              "elements": [
+                {
+                  "id": "m_cta_b1",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Scopri tutti i percorsi →",
+                    "link": { "url": "/percorsi/", "is_external": false, "nofollow": false },
+                    "align": "center",
+                    "background_color": "#faf6ef",
+                    "button_text_color": "#7a6435",
+                    "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                    "padding": { "unit": "px", "top": "18", "right": "40", "bottom": "18", "left": "40", "isLinked": false },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 15 },
+                    "typography_font_weight": "600"
+                  }
+                },
+                {
+                  "id": "m_cta_b2",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Inizia gratis ora",
+                    "link": { "url": "https://mentecorpoenergia.it/rinata-reset-3-giorni/", "is_external": true, "nofollow": false },
+                    "align": "center",
+                    "background_color": "transparent",
+                    "button_text_color": "#f2e8d5",
+                    "border_border": "solid",
+                    "border_color": "#f2e8d5",
+                    "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                    "padding": { "unit": "px", "top": "18", "right": "40", "bottom": "18", "left": "40", "isLinked": false },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 15 },
+                    "typography_font_weight": "600"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+
+  ],
+  "page_settings": {
+    "template": "elementor_canvas",
+    "hide_title": "yes"
+  }
+}

@@ -1,0 +1,1185 @@
+{
+  "version": "0.4",
+  "title": "Home — Metodo RINATA",
+  "type": "page",
+  "content": [
+
+    {
+      "id": "sect_hero",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "align_items": "stretch",
+        "background_background": "classic",
+        "background_color": "#faf6ef",
+        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+        "min_height": { "unit": "vh", "size": 88 }
+      },
+      "elements": [
+        {
+          "id": "hero_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "align_items": "center",
+            "gap": "no",
+            "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+          },
+          "elements": [
+            {
+              "id": "hero_col_left",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "flex-start",
+                "gap": "extended",
+                "width": { "unit": "%", "size": 52 },
+                "padding": { "unit": "px", "top": "0", "right": "48", "bottom": "0", "left": "0", "isLinked": false }
+              },
+              "elements": [
+                {
+                  "id": "hero_tag",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "METODO RINATA 40+",
+                    "header_size": "p",
+                    "align": "left",
+                    "title_color": "#8a9e82",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 13 },
+                    "typography_font_weight": "600",
+                    "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                    "typography_text_transform": "uppercase"
+                  }
+                },
+                {
+                  "id": "hero_h1",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Ritrova energia, <em>leggerezza</em> e benessere",
+                    "header_size": "h1",
+                    "align": "left",
+                    "title_color": "#3d3530",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": { "unit": "px", "size": 58 },
+                    "typography_font_weight": "600",
+                    "typography_line_height": { "unit": "em", "size": 1.15 }
+                  }
+                },
+                {
+                  "id": "hero_lead",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Un metodo scientifico e naturale per le donne dai 40 anni che vogliono ritrovare equilibrio ormonale, energia e serenità — senza rinunce e senza farmaci.</p>",
+                    "text_color": "#7a6435",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 18 },
+                    "typography_line_height": { "unit": "em", "size": 1.8 }
+                  }
+                },
+                {
+                  "id": "hero_btns",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row",
+                    "gap": "narrow",
+                    "flex_wrap": "wrap",
+                    "align_items": "center"
+                  },
+                  "elements": [
+                    {
+                      "id": "btn_h1",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Inizia il Reset gratuito",
+                        "link": { "url": "https://mentecorpoenergia.it/rinata-reset-3-giorni-b/", "is_external": true, "nofollow": false },
+                        "align": "center",
+                        "background_color": "#b8912a",
+                        "button_text_color": "#faf6ef",
+                        "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                        "padding": { "unit": "px", "top": "16", "right": "36", "bottom": "16", "left": "36", "isLinked": false },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_font_weight": "600",
+                        "hover_background_color": "#7a6435",
+                        "hover_button_text_color": "#faf6ef"
+                      }
+                    },
+                    {
+                      "id": "btn_h2",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Scopri il Metodo",
+                        "link": { "url": "/il-metodo/", "is_external": false, "nofollow": false },
+                        "align": "center",
+                        "background_color": "transparent",
+                        "button_text_color": "#b8912a",
+                        "border_border": "solid",
+                        "border_color": "#b8912a",
+                        "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                        "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                        "padding": { "unit": "px", "top": "16", "right": "36", "bottom": "16", "left": "36", "isLinked": false },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_font_weight": "600",
+                        "hover_background_color": "#b8912a",
+                        "hover_button_text_color": "#faf6ef"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "hero_col_right",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "center",
+                "width": { "unit": "%", "size": 48 }
+              },
+              "elements": [
+                {
+                  "id": "hero_img",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "https://metodorinata.it/wp-content/uploads/Marisa-home-page.jpg",
+                      "alt": "Marisa Pagliuca — Metodo RINATA"
+                    },
+                    "image_border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "width": { "unit": "%", "size": 100 }
+                  }
+                },
+                {
+                  "id": "hero_badge",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align:center;\">🌿 <strong>Metodo scientifico</strong><br><span style=\"font-size:13px;\">Psicobiologia · Neuroyoga · Nutrizione</span></p>",
+                    "background_background": "classic",
+                    "background_color": "#ffffff",
+                    "text_color": "#3d3530",
+                    "border_radius": { "unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true },
+                    "padding": { "unit": "px", "top": "14", "right": "20", "bottom": "14", "left": "20", "isLinked": false },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 15 }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sect_stats",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+        "border_border": "solid",
+        "border_width": { "unit": "px", "top": "1", "right": "0", "bottom": "1", "left": "0", "isLinked": false },
+        "border_color": "#f2e8d5"
+      },
+      "elements": [
+        {
+          "id": "stats_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "gap": "no",
+            "align_items": "stretch",
+            "padding": { "unit": "px", "top": "0", "right": "20", "bottom": "0", "left": "20", "isLinked": false }
+          },
+          "elements": [
+            {
+              "id": "stat1",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "center",
+                "width": { "unit": "%", "size": 25 },
+                "padding": { "unit": "px", "top": "40", "right": "20", "bottom": "40", "left": "20", "isLinked": false },
+                "border_border": "solid",
+                "border_width": { "unit": "px", "top": "0", "right": "1", "bottom": "0", "left": "0", "isLinked": false },
+                "border_color": "#f2e8d5"
+              },
+              "elements": [
+                {
+                  "id": "stat1_num",
+                  "elType": "widget",
+                  "widgetType": "counter",
+                  "settings": {
+                    "starting_number": 0,
+                    "ending_number": 500,
+                    "suffix": "+",
+                    "title": "Donne accompagnate",
+                    "number_color": "#b8912a",
+                    "title_color": "#3d3530",
+                    "number_typography_typography": "custom",
+                    "number_typography_font_family": "Cormorant Garamond",
+                    "number_typography_font_size": { "unit": "px", "size": 48 },
+                    "number_typography_font_weight": "700",
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Plus Jakarta Sans",
+                    "title_typography_font_size": { "unit": "px", "size": 14 },
+                    "title_typography_font_weight": "500",
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "stat2",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "center",
+                "width": { "unit": "%", "size": 25 },
+                "padding": { "unit": "px", "top": "40", "right": "20", "bottom": "40", "left": "20", "isLinked": false },
+                "border_border": "solid",
+                "border_width": { "unit": "px", "top": "0", "right": "1", "bottom": "0", "left": "0", "isLinked": false },
+                "border_color": "#f2e8d5"
+              },
+              "elements": [
+                {
+                  "id": "stat2_num",
+                  "elType": "widget",
+                  "widgetType": "counter",
+                  "settings": {
+                    "starting_number": 0,
+                    "ending_number": 3,
+                    "suffix": "",
+                    "title": "Libri pubblicati",
+                    "number_color": "#b8912a",
+                    "title_color": "#3d3530",
+                    "number_typography_typography": "custom",
+                    "number_typography_font_family": "Cormorant Garamond",
+                    "number_typography_font_size": { "unit": "px", "size": 48 },
+                    "number_typography_font_weight": "700",
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Plus Jakarta Sans",
+                    "title_typography_font_size": { "unit": "px", "size": 14 },
+                    "title_typography_font_weight": "500",
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "stat3",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "center",
+                "width": { "unit": "%", "size": 25 },
+                "padding": { "unit": "px", "top": "40", "right": "20", "bottom": "40", "left": "20", "isLinked": false },
+                "border_border": "solid",
+                "border_width": { "unit": "px", "top": "0", "right": "1", "bottom": "0", "left": "0", "isLinked": false },
+                "border_color": "#f2e8d5"
+              },
+              "elements": [
+                {
+                  "id": "stat3_num",
+                  "elType": "widget",
+                  "widgetType": "counter",
+                  "settings": {
+                    "starting_number": 0,
+                    "ending_number": 15,
+                    "suffix": "+",
+                    "title": "Anni di esperienza",
+                    "number_color": "#b8912a",
+                    "title_color": "#3d3530",
+                    "number_typography_typography": "custom",
+                    "number_typography_font_family": "Cormorant Garamond",
+                    "number_typography_font_size": { "unit": "px", "size": 48 },
+                    "number_typography_font_weight": "700",
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Plus Jakarta Sans",
+                    "title_typography_font_size": { "unit": "px", "size": 14 },
+                    "title_typography_font_weight": "500",
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "stat4",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "center",
+                "width": { "unit": "%", "size": 25 },
+                "padding": { "unit": "px", "top": "40", "right": "20", "bottom": "40", "left": "20", "isLinked": false }
+              },
+              "elements": [
+                {
+                  "id": "stat4_num",
+                  "elType": "widget",
+                  "widgetType": "counter",
+                  "settings": {
+                    "starting_number": 0,
+                    "ending_number": 3,
+                    "suffix": "",
+                    "title": "Pilastri del metodo",
+                    "number_color": "#b8912a",
+                    "title_color": "#3d3530",
+                    "number_typography_typography": "custom",
+                    "number_typography_font_family": "Cormorant Garamond",
+                    "number_typography_font_size": { "unit": "px", "size": 48 },
+                    "number_typography_font_weight": "700",
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Plus Jakarta Sans",
+                    "title_typography_font_size": { "unit": "px", "size": 14 },
+                    "title_typography_font_weight": "500",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sect_pillars",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#faf6ef",
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "pillars_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "pillars_tag",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Il Metodo RINATA",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#8a9e82",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "600",
+                "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "pillars_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tre pilastri per la tua trasformazione",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#3d3530",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 42 },
+                "typography_font_weight": "600",
+                "typography_line_height": { "unit": "em", "size": 1.25 }
+              }
+            },
+            {
+              "id": "pillars_sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Un approccio integrato che agisce su mente, corpo ed energia — in modo naturale e sostenibile.</p>",
+                "text_color": "#7a6435",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 17 },
+                "typography_line_height": { "unit": "em", "size": 1.8 }
+              }
+            },
+            {
+              "id": "pillars_cards",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "gap": "default",
+                "align_items": "stretch",
+                "flex_wrap": "wrap"
+              },
+              "elements": [
+                {
+                  "id": "pillar1_card",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 32 },
+                    "background_background": "classic",
+                    "background_color": "rgba(138,158,130,0.12)",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "p1_icon",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "🧠",
+                        "header_size": "p",
+                        "align": "left",
+                        "typography_font_size": { "unit": "px", "size": 36 }
+                      }
+                    },
+                    {
+                      "id": "p1_title",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Psicobiologia",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 26 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "p1_text",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Comprendi come mente e corpo comunicano. Riconosci i pattern emotivi che bloccano il tuo benessere e impara a trasformarli.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.75 }
+                      }
+                    },
+                    {
+                      "id": "p1_btn",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Scopri di più →",
+                        "link": { "url": "/il-metodo/", "is_external": false, "nofollow": false },
+                        "align": "left",
+                        "background_color": "transparent",
+                        "button_text_color": "#b8912a",
+                        "border_border": "none",
+                        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600",
+                        "typography_font_size": { "unit": "px", "size": 14 }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "pillar2_card",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 32 },
+                    "background_background": "classic",
+                    "background_color": "rgba(184,145,42,0.10)",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "p2_icon",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "🧘",
+                        "header_size": "p",
+                        "align": "left",
+                        "typography_font_size": { "unit": "px", "size": 36 }
+                      }
+                    },
+                    {
+                      "id": "p2_title",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Neuroyoga",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 26 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "p2_text",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Pratiche di movimento e respirazione che regolano il sistema nervoso, riducono il cortisolo e riattivano la vitalità naturale.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.75 }
+                      }
+                    },
+                    {
+                      "id": "p2_btn",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Scopri di più →",
+                        "link": { "url": "/il-metodo/", "is_external": false, "nofollow": false },
+                        "align": "left",
+                        "background_color": "transparent",
+                        "button_text_color": "#b8912a",
+                        "border_border": "none",
+                        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600",
+                        "typography_font_size": { "unit": "px", "size": 14 }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "pillar3_card",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 32 },
+                    "background_background": "classic",
+                    "background_color": "rgba(155,139,176,0.12)",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "p3_icon",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "🥗",
+                        "header_size": "p",
+                        "align": "left",
+                        "typography_font_size": { "unit": "px", "size": 36 }
+                      }
+                    },
+                    {
+                      "id": "p3_title",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Nutrizione Funzionale",
+                        "header_size": "h3",
+                        "align": "left",
+                        "title_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 26 },
+                        "typography_font_weight": "600"
+                      }
+                    },
+                    {
+                      "id": "p3_text",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Un'alimentazione pensata per il tuo corpo dopo i 40: anti-infiammatoria, saziante e rispettosa dei tuoi ormoni.</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.75 }
+                      }
+                    },
+                    {
+                      "id": "p3_btn",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Scopri di più →",
+                        "link": { "url": "/il-metodo/", "is_external": false, "nofollow": false },
+                        "align": "left",
+                        "background_color": "transparent",
+                        "button_text_color": "#b8912a",
+                        "border_border": "none",
+                        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_weight": "600",
+                        "typography_font_size": { "unit": "px", "size": 14 }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sect_chisono",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "chisono_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "gap": "extended",
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "chisono_col_img",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "width": { "unit": "%", "size": 45 }
+              },
+              "elements": [
+                {
+                  "id": "chisono_img",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "https://metodorinata.it/wp-content/uploads/Marisahomepage1.jpeg",
+                      "alt": "Marisa Pagliuca"
+                    },
+                    "image_border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "width": { "unit": "%", "size": 100 }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "chisono_col_text",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "flex-start",
+                "gap": "default",
+                "width": { "unit": "%", "size": 55 }
+              },
+              "elements": [
+                {
+                  "id": "cs_tag",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Chi sono",
+                    "header_size": "p",
+                    "align": "left",
+                    "title_color": "#8a9e82",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 13 },
+                    "typography_font_weight": "600",
+                    "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                    "typography_text_transform": "uppercase"
+                  }
+                },
+                {
+                  "id": "cs_h2",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Sono Marisa Pagliuca",
+                    "header_size": "h2",
+                    "align": "left",
+                    "title_color": "#3d3530",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": { "unit": "px", "size": 40 },
+                    "typography_font_weight": "600",
+                    "typography_line_height": { "unit": "em", "size": 1.25 }
+                  }
+                },
+                {
+                  "id": "cs_text",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Formatrice, autrice e creatrice del Metodo RINATA 40+. Da oltre 15 anni accompagno le donne in un percorso di trasformazione profonda che unisce scienza e naturalezza.</p><p>Ho scritto 3 libri sul benessere femminile e ho aiutato oltre 500 donne a ritrovare energia, leggerezza e serenità dopo i 40 anni.</p><p>Il Metodo RINATA nasce dalla mia esperienza personale e professionale: un approccio che rispetta il corpo femminile e lo accompagna con dolcezza verso il suo equilibrio naturale.</p>",
+                    "text_color": "#7a6435",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 16 },
+                    "typography_line_height": { "unit": "em", "size": 1.8 }
+                  }
+                },
+                {
+                  "id": "cs_firma",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Marisa Pagliuca",
+                    "header_size": "p",
+                    "align": "left",
+                    "title_color": "#b8912a",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Cormorant Garamond",
+                    "typography_font_size": { "unit": "px", "size": 28 },
+                    "typography_font_weight": "400",
+                    "typography_font_style": "italic"
+                  }
+                },
+                {
+                  "id": "cs_btn",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "La mia storia",
+                    "link": { "url": "/chi-sono/", "is_external": false, "nofollow": false },
+                    "align": "left",
+                    "background_color": "#b8912a",
+                    "button_text_color": "#faf6ef",
+                    "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                    "padding": { "unit": "px", "top": "16", "right": "36", "bottom": "16", "left": "36", "isLinked": false },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 15 },
+                    "typography_font_weight": "600",
+                    "hover_background_color": "#7a6435"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sect_testimonianze",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#f2e8d5",
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "testi_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "testi_tag",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Le loro parole",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#8a9e82",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "600",
+                "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "testi_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Cosa dicono le donne RINATA",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#3d3530",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 42 },
+                "typography_font_weight": "600"
+              }
+            },
+            {
+              "id": "testi_cards",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "gap": "default",
+                "align_items": "stretch",
+                "flex_wrap": "wrap"
+              },
+              "elements": [
+                {
+                  "id": "testi1",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 32 },
+                    "background_background": "classic",
+                    "background_color": "#ffffff",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "t1_stars",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "★★★★★",
+                        "header_size": "p",
+                        "align": "left",
+                        "title_color": "#b8912a",
+                        "typography_font_size": { "unit": "px", "size": 18 }
+                      }
+                    },
+                    {
+                      "id": "t1_quote",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>\"In 3 settimane ho perso il gonfiore cronico che avevo da anni. Ma soprattutto ho ritrovato energia e voglia di vivere che non sentivo da tanto tempo.\"</p>",
+                        "text_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 18 },
+                        "typography_font_style": "italic",
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      }
+                    },
+                    {
+                      "id": "t1_author",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p><strong>Alessandra M.</strong>, 47 anni, Milano</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 14 }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "testi2",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 32 },
+                    "background_background": "classic",
+                    "background_color": "#ffffff",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "t2_stars",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "★★★★★",
+                        "header_size": "p",
+                        "align": "left",
+                        "title_color": "#b8912a",
+                        "typography_font_size": { "unit": "px", "size": 18 }
+                      }
+                    },
+                    {
+                      "id": "t2_quote",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>\"Finalmente un metodo che non mi fa sentire in colpa. Ho imparato ad ascoltare il mio corpo e ora so esattamente di cosa ha bisogno.\"</p>",
+                        "text_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 18 },
+                        "typography_font_style": "italic",
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      }
+                    },
+                    {
+                      "id": "t2_author",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p><strong>Francesca R.</strong>, 52 anni, Roma</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 14 }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "testi3",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "gap": "narrow",
+                    "width": { "unit": "%", "size": 32 },
+                    "background_background": "classic",
+                    "background_color": "#ffffff",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "t3_stars",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "★★★★★",
+                        "header_size": "p",
+                        "align": "left",
+                        "title_color": "#b8912a",
+                        "typography_font_size": { "unit": "px", "size": 18 }
+                      }
+                    },
+                    {
+                      "id": "t3_quote",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>\"Il Neuroyoga ha cambiato il mio rapporto con lo stress. Dormo meglio, ho meno vampate e mi sento più centrata. Grazie Marisa!\"</p>",
+                        "text_color": "#3d3530",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Cormorant Garamond",
+                        "typography_font_size": { "unit": "px", "size": 18 },
+                        "typography_font_style": "italic",
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      }
+                    },
+                    {
+                      "id": "t3_author",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p><strong>Giovanna T.</strong>, 49 anni, Firenze</p>",
+                        "text_color": "#7a6435",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": { "unit": "px", "size": 14 }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "sect_cta",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "gradient",
+        "background_color": "#3d3530",
+        "background_color_b": "#5c4a3a",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": { "unit": "deg", "size": 135 },
+        "padding": { "unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "cta_inner",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": "extended"
+          },
+          "elements": [
+            {
+              "id": "cta_tag",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Inizia ora",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#8a9e82",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 13 },
+                "typography_font_weight": "600",
+                "typography_letter_spacing": { "unit": "em", "size": 0.2 },
+                "typography_text_transform": "uppercase"
+              }
+            },
+            {
+              "id": "cta_h2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Il tuo reset inizia da qui",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#f2e8d5",
+                "typography_typography": "custom",
+                "typography_font_family": "Cormorant Garamond",
+                "typography_font_size": { "unit": "px", "size": 48 },
+                "typography_font_weight": "600",
+                "typography_line_height": { "unit": "em", "size": 1.2 }
+              }
+            },
+            {
+              "id": "cta_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align:center;\">Tre giorni gratuiti per ridurre il gonfiore, calmare la fame nervosa e ritrovare energia. Nessuna carta di credito richiesta.</p>",
+                "text_color": "#f2e8d5",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": { "unit": "px", "size": 17 },
+                "typography_line_height": { "unit": "em", "size": 1.8 }
+              }
+            },
+            {
+              "id": "cta_btns",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "gap": "narrow",
+                "align_items": "center",
+                "justify_content": "center",
+                "flex_wrap": "wrap"
+              },
+              "elements": [
+                {
+                  "id": "cta_btn1",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Inizia il Reset gratuito",
+                    "link": { "url": "https://mentecorpoenergia.it/rinata-reset-3-giorni-b/", "is_external": true, "nofollow": false },
+                    "align": "center",
+                    "background_color": "#faf6ef",
+                    "button_text_color": "#7a6435",
+                    "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                    "padding": { "unit": "px", "top": "18", "right": "40", "bottom": "18", "left": "40", "isLinked": false },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 15 },
+                    "typography_font_weight": "600",
+                    "hover_background_color": "#f2e8d5"
+                  }
+                },
+                {
+                  "id": "cta_btn2",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Tutti i percorsi",
+                    "link": { "url": "/percorsi/", "is_external": false, "nofollow": false },
+                    "align": "center",
+                    "background_color": "transparent",
+                    "button_text_color": "#f2e8d5",
+                    "border_border": "solid",
+                    "border_color": "#f2e8d5",
+                    "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "50", "right": "50", "bottom": "50", "left": "50", "isLinked": true },
+                    "padding": { "unit": "px", "top": "18", "right": "40", "bottom": "18", "left": "40", "isLinked": false },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": { "unit": "px", "size": 15 },
+                    "typography_font_weight": "600",
+                    "hover_background_color": "#f2e8d5",
+                    "hover_button_text_color": "#7a6435"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+
+  ],
+  "page_settings": {
+    "template": "elementor_canvas",
+    "page_title_selector": "h1.entry-title",
+    "hide_title": "yes",
+    "elementor_page_title_selector": "h1.entry-title"
+  }
+}
