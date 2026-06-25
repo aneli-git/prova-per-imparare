@@ -1,0 +1,257 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+  .rq-wrap {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #3d3530;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ── HERO ── */
+  .rq-hero {
+    background: #faf6ef;
+    border-radius: 20px;
+    padding: 52px 48px 44px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .rq-hero .rq-emoji {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  .rq-hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #3d3530;
+    line-height: 1.2;
+    margin: 0 0 20px;
+  }
+  .rq-hero .rq-tag {
+    display: inline-block;
+    background: rgba(138,158,130,0.18);
+    color: #8a9e82;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 6px 18px;
+    margin-bottom: 24px;
+  }
+
+  /* ── TESTO PRINCIPALE ── */
+  .rq-body {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 44px 48px;
+    margin-bottom: 32px;
+    border: 1px solid #f2e8d5;
+  }
+  .rq-body p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: #7a6435;
+    margin: 0 0 20px;
+  }
+  .rq-body p:last-child {
+    margin-bottom: 0;
+  }
+  .rq-body h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #3d3530;
+    margin: 36px 0 18px;
+    line-height: 1.3;
+  }
+  .rq-body h2:first-child {
+    margin-top: 0;
+  }
+  .rq-body strong {
+    color: #3d3530;
+    font-weight: 700;
+  }
+
+  /* ── CHECKLIST ── */
+  .rq-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 8px;
+  }
+  .rq-check-list li {
+    font-size: 17px;
+    font-weight: 500;
+    color: #3d3530;
+    line-height: 1.6;
+    padding: 10px 0 10px 16px;
+    border-bottom: 1px solid #f2e8d5;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .rq-check-list li:last-child {
+    border-bottom: none;
+  }
+  .rq-check-list li .rq-tick {
+    color: #8a9e82;
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ── SEZIONE VERDE (citazione) ── */
+  .rq-highlight {
+    background: rgba(138,158,130,0.12);
+    border-left: 4px solid #8a9e82;
+    border-radius: 0 16px 16px 0;
+    padding: 22px 28px;
+    margin: 28px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #3d3530;
+    line-height: 1.65;
+  }
+
+  /* ── CTA BOX ── */
+  .rq-cta {
+    background: linear-gradient(135deg, #3d3530 0%, #5c4a3a 100%);
+    border-radius: 20px;
+    padding: 52px 48px;
+    text-align: center;
+  }
+  .rq-cta .rq-cta-tag {
+    display: inline-block;
+    color: #8a9e82;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .rq-cta h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #f2e8d5;
+    line-height: 1.25;
+    margin: 0 0 16px;
+  }
+  .rq-cta p {
+    font-size: 16px;
+    color: #f2e8d5;
+    opacity: 0.85;
+    line-height: 1.75;
+    max-width: 480px;
+    margin: 0 auto 36px;
+  }
+  .rq-btn {
+    display: inline-block;
+    background: #b8912a;
+    color: #faf6ef !important;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    padding: 18px 44px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease;
+    box-shadow: 0 6px 24px rgba(184,145,42,0.35);
+  }
+  .rq-btn:hover {
+    background: #7a6435;
+    transform: translateY(-2px);
+    color: #faf6ef !important;
+    text-decoration: none !important;
+  }
+
+  /* ── DIVIDER ── */
+  .rq-divider {
+    width: 48px;
+    height: 3px;
+    background: #b8912a;
+    border-radius: 2px;
+    margin: 32px auto;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .rq-hero, .rq-body, .rq-cta {
+      padding: 36px 24px;
+    }
+    .rq-hero h1 {
+      font-size: 32px;
+    }
+    .rq-cta h2 {
+      font-size: 28px;
+    }
+    .rq-btn {
+      width: 100%;
+      text-align: center;
+      padding: 18px 24px;
+    }
+  }
+</style>
+
+<div class="rq-wrap">
+
+  <!-- HERO -->
+  <div class="rq-hero">
+    <div class="rq-emoji">🎉</div>
+    <span class="rq-tag">Il tuo risultato</span>
+    <h1>Il tuo corpo non è "rotto".<br>Ti sta semplicemente chiedendo<br><em>un approccio diverso.</em></h1>
+  </div>
+
+  <!-- CORPO TESTO -->
+  <div class="rq-body">
+
+    <p>Se ti sei riconosciuta nelle domande del quiz, sappi che <strong>non sei sola</strong>.</p>
+
+    <p>Molte donne dopo i 40 anni iniziano a sentirsi più gonfie, più stanche, fanno fatica a perdere peso e hanno la sensazione che il loro corpo non risponda più come prima.</p>
+
+    <div class="rq-highlight">
+      La buona notizia è che questo non significa che hai meno forza di volontà o che stai facendo tutto sbagliato.
+    </div>
+
+    <p>Con il passare degli anni cambiano gli ormoni, il metabolismo e il modo in cui il corpo reagisce allo stress e all'alimentazione. Per questo le strategie che funzionavano a 30 anni spesso non danno più gli stessi risultati.</p>
+
+    <h2>Da dove iniziare?</h2>
+
+    <p>Non serve l'ennesima dieta restrittiva.</p>
+
+    <p>Serve aiutare il corpo a ritrovare equilibrio, ridurre il gonfiore e ripartire con piccoli passi concreti.</p>
+
+    <p>Per questo ho creato il <strong>Reset 7 Giorni</strong>.</p>
+
+    <p>In soli 7 giorni inizierai un percorso semplice e guidato che ti aiuterà a:</p>
+
+    <ul class="rq-check-list">
+      <li><span class="rq-tick">✅</span> Ridurre il gonfiore.</li>
+      <li><span class="rq-tick">✅</span> Ritrovare più energia durante la giornata.</li>
+      <li><span class="rq-tick">✅</span> Riprendere il controllo della fame nervosa.</li>
+      <li><span class="rq-tick">✅</span> Sentirti più leggera e in sintonia con il tuo corpo.</li>
+    </ul>
+
+    <p style="margin-top:24px;">Questo è il <strong>primo passo</strong> verso un cambiamento che può durare nel tempo.</p>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="rq-cta">
+    <div class="rq-cta-tag">🌿 Sei pronta a iniziare?</div>
+    <h2>Inizia oggi il tuo Reset 7 Giorni e regalati una settimana dedicata al tuo benessere.</h2>
+    <p>Un percorso semplice, guidato e pensato apposta per le donne dopo i 40.</p>
+    <a class="rq-btn" href="https://metodorinata.it/prodotto/reset-7-giorni/" target="_blank" rel="noopener">
+      👉 Inizia il Reset 7 Giorni
+    </a>
+  </div>
+
+</div>
