@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti — Metodo RINATA 40+</title>
+  <meta name="description" content="Scrivi a Marisa Pagliuca del Metodo RINATA. Risponde personalmente entro 24-48 ore.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contatti-grid {
+      display: grid;
+      grid-template-columns: 58% 38%;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* FORM */
+    .form-box {
+      background: var(--bianco);
+      border-radius: 28px;
+      padding: 48px;
+      box-shadow: var(--shadow);
+    }
+    .form-box h2 { margin-bottom: 8px; }
+    .form-note {
+      font-size: 0.82rem;
+      color: rgba(122,100,53,0.55);
+      margin-bottom: 32px;
+      font-weight: 300;
+    }
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(122,100,53,0.65);
+      margin-bottom: 7px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 14px 18px;
+      border: 1.5px solid rgba(184,145,42,0.2);
+      border-radius: 12px;
+      background: var(--crema);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.9rem;
+      color: var(--testo);
+      outline: none;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--verde); }
+    .form-group textarea { resize: vertical; min-height: 140px; }
+    .form-group.privacy-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .form-group.privacy-group input {
+      width: auto;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+    .form-group.privacy-group label {
+      font-size: 0.78rem;
+      text-transform: none;
+      letter-spacing: 0;
+      font-weight: 400;
+      color: var(--testo);
+    }
+    .form-group.privacy-group label a { color: var(--verde); }
+    .btn-submit {
+      width: 100%;
+      background: var(--verde);
+      color: var(--crema);
+      border: none;
+      padding: 16px 24px;
+      border-radius: 50px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 8px;
+    }
+    .btn-submit:hover { background: var(--verde-dark); }
+    .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+    .privacy-fine {
+      font-size: 0.7rem;
+      color: rgba(122,100,53,0.4);
+      text-align: center;
+      margin-top: 14px;
+    }
+    .success-msg {
+      display: none;
+      background: rgba(138,158,130,0.12);
+      border: 1.5px solid var(--verde);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      color: var(--verde-dark);
+      font-weight: 600;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* INFO CARDS */
+    .info-col { display: flex; flex-direction: column; gap: 20px; }
+    .info-card {
+      background: var(--bianco);
+      border: 1px solid rgba(184,145,42,0.1);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .info-card .icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .info-card h3 { font-size: 1.15rem; margin-bottom: 6px; }
+    .info-card a {
+      color: var(--verde);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+    .info-card p {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: rgba(61,53,48,0.6);
+      margin-top: 6px;
+      line-height: 1.6;
+    }
+
+    /* MAPPA PLACEHOLDER */
+    .mappa-placeholder {
+      background: linear-gradient(135deg, rgba(138,158,130,0.15), rgba(184,145,42,0.1));
+      border: 2px dashed rgba(138,158,130,0.3);
+      border-radius: var(--radius);
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--verde);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .contatti-grid { grid-template-columns: 1fr; }
+      .form-box { padding: 28px 20px; }
+    }
+  </style>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.metodorinata.it/contatti.html">
+  <meta property="og:title" content="Contatti | Metodo RINATA di Marisa Pagliuca">
+  <meta property="og:description" content="Scrivimi per informazioni sui percorsi RINATA. Sono qui per aiutarti a ritrovare il tuo benessere.">
+  <meta property="og:image" content="https://www.metodorinata.it/img/marisa-homepage.jpg">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Metodo RINATA">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contatti | Metodo RINATA di Marisa Pagliuca">
+  <meta name="twitter:description" content="Scrivimi per informazioni sui percorsi RINATA. Sono qui per aiutarti a ritrovare il tuo benessere.">
+  <meta name="twitter:image" content="https://www.metodorinata.it/img/marisa-homepage.jpg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html" class="site-logo">
+    <img src="img/logo-rinata.png" alt="Metodo RINATA">
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="il-metodo.html">Il Metodo</a>
+    <a href="percorsi.html">Percorsi</a>
+    <a href="chi-sono.html">Chi Sono</a>
+    <a href="blog.html">Blog</a>
+    <a href="contatti.html" class="active">Contatti</a>
+    <a href="percorsi.html#reset" class="btn-nav">Reset 3 Giorni ↓</a>
+  </nav>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="il-metodo.html">Il Metodo</a>
+  <a href="percorsi.html">Percorsi</a>
+  <a href="chi-sono.html">Chi Sono</a>
+  <a href="blog.html">Blog</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="percorsi.html#reset" class="btn-nav-mobile">Reset 3 Giorni — Gratis</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="tag">Contatti</span>
+  <h1>Scrivimi.<br><em>Sono qui.</em></h1>
+  <p class="lead">Hai domande sul Metodo RINATA? Vuoi capire quale percorso fa per te? Scrivimi — rispondo personalmente entro 24-48 ore.</p>
+</section>
+
+<!-- FORM + INFO -->
+<section class="section section-crema" style="padding-top:40px;">
+  <div class="container">
+    <div class="contatti-grid">
+
+      <!-- FORM -->
+      <div class="form-box">
+        <h2>Inviami un messaggio</h2>
+        <p class="form-note">Rispondo entro 24-48 ore nei giorni lavorativi. Ogni messaggio viene letto da me personalmente.</p>
+
+        <form id="rinata-contact-form">
+          <div class="form-group">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="La tua email" required>
+          </div>
+          <div class="form-group">
+            <label for="argomento">Di cosa vuoi parlarmi?</label>
+            <select id="argomento" name="argomento">
+              <option value="">Seleziona un argomento</option>
+              <option value="reset3">Reset 3 Giorni gratuito</option>
+              <option value="reset7">Reset 7 Giorni</option>
+              <option value="retreat">Day Retreat in Versilia</option>
+              <option value="metodo">Informazioni sul Metodo RINATA</option>
+              <option value="altro">Altro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="messaggio">Il tuo messaggio *</label>
+            <textarea id="messaggio" name="messaggio" placeholder="Scrivi qui la tua domanda o raccontami brevemente la tua situazione..." required></textarea>
+          </div>
+          <div class="form-group privacy-group">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">Ho letto e accetto la <a href="privacy.html">Privacy Policy</a>. Acconsento al trattamento dei miei dati personali per ricevere una risposta.</label>
+          </div>
+          <button type="submit" class="btn-submit">Invia il messaggio</button>
+          <p class="privacy-fine">I tuoi dati sono al sicuro. Non condivido mai le informazioni personali con terze parti.</p>
+          <div class="success-msg" id="rinata-success">
+            ✓ Messaggio inviato con successo! Ti rispondo entro 24-48 ore. 🌿
+          </div>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="info-col">
+        <div class="info-card">
+          <div class="icon">✉️</div>
+          <h3>Scrivimi direttamente</h3>
+          <a href="mailto:info@metodorinata.it">info@metodorinata.it</a>
+          <p>Rispondo personalmente entro 24-48 ore nei giorni lavorativi.</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📸</div>
+          <h3>Seguimi su Instagram</h3>
+          <a href="https://www.instagram.com/marisapagliucarinata" target="_blank">@marisapagliucarinata</a>
+          <p>Contenuti quotidiani su benessere, ormoni e Neuroyoga. Puoi anche scrivermi in DM.</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📍</div>
+          <h3>Dove sono</h3>
+          <p>Versilia, Toscana</p>
+          <p>I percorsi online sono disponibili ovunque in Italia. I retreat si tengono in Versilia.</p>
+          <div class="mappa-placeholder">
+            📍 Versilia, Toscana
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINALE -->
+<section class="section section-testo" style="text-align:center;">
+  <div class="container-sm">
+    <span class="tag" style="color:var(--oro);">Non sai da dove iniziare?</span>
+    <h2 style="color:var(--oro-light);margin-bottom:16px;">Parti dal Reset gratuito</h2>
+    <p style="color:rgba(242,232,213,0.8);margin-bottom:36px;">Il primo passo è sempre il più importante. Tre giorni gratuiti per sentire la differenza.</p>
+    <a href="https://mentecorpoenergia.it/rinata-reset-3-giorni/" target="_blank" class="btn btn-white">Inizia il Reset gratuito →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="img/logo-rinata.png" alt="Metodo RINATA" class="footer-logo">
+      <p>Il Metodo RINATA 40+ accompagna le donne verso un benessere autentico e duraturo.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <a href="index.html">Home</a>
+      <a href="il-metodo.html">Il Metodo</a>
+      <a href="percorsi.html">Percorsi</a>
+      <a href="chi-sono.html">Chi Sono</a>
+      <a href="blog.html">Blog</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+    <div class="footer-col">
+      <h4>Percorsi</h4>
+      <a href="percorsi.html#reset">Reset 3 Giorni — Gratis</a>
+      <a href="percorsi.html#reset7">Reset 7 Giorni</a>
+      <a href="percorsi.html#retreat">Day Retreat</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <p>📧 <a href="mailto:info@metodorinata.it">info@metodorinata.it</a></p>
+      <p>📸 <a href="https://www.instagram.com/marisapagliucarinata" target="_blank">@marisapagliucarinata</a></p>
+      <p>📍 Versilia, Toscana</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Metodo RINATA — Marisa Pagliuca. Tutti i diritti riservati.</span>
+    <span><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="cookie.html">Cookie Policy</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/39INSERISCI_NUMERO?text=Ciao%20Marisa%2C%20ho%20visitato%20il%20tuo%20sito%20e%20vorrei%20saperne%20di%20pi%C3%B9%20sul%20Metodo%20RINATA." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Scrivimi su WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.013 22l4.975-1.302A9.956 9.956 0 0011.999 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm0 18a7.946 7.946 0 01-4.05-1.107l-.29-.173-3.012.789.804-2.936-.19-.302A7.952 7.952 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/>
+    </svg>
+  </a>
+</body>
+</html>

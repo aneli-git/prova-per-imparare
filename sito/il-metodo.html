@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Metodo RINATA — Psicobiologia, Neuroyoga e Nutrizione Funzionale</title>
+  <meta name="description" content="Scopri il Metodo RINATA: un approccio scientifico e naturale basato su psicobiologia, Neuroyoga e nutrizione funzionale per le donne dai 40 anni.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .step-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-bottom: 80px; }
+    .step-grid:last-child { margin-bottom: 0; }
+    .step-grid.reverse .step-img { order: 2; }
+    .step-grid.reverse .step-text { order: 1; }
+    .step-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 5rem;
+      font-weight: 700;
+      color: rgba(184,145,42,0.15);
+      line-height: 1;
+      margin-bottom: -16px;
+    }
+    .step-text .tag { margin-bottom: 8px; }
+    .step-text h2 { margin-bottom: 16px; }
+    .step-text p { margin-bottom: 14px; }
+    .step-text ul { margin: 16px 0 24px 0; }
+    .step-text ul li {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--testo);
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid rgba(184,145,42,0.1);
+    }
+    .step-text ul li::before { content: "✓"; position: absolute; left: 0; color: var(--verde); font-weight: 700; }
+    .step-img .img-placeholder { min-height: 420px; border-radius: 32px 8px 32px 8px; }
+    .step-grid.reverse .step-img .img-placeholder { border-radius: 8px 32px 8px 32px; }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(184,145,42,0.15);
+      padding: 24px 0;
+    }
+    .faq-question {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--testo-light);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-question::after { content: "+"; font-size: 1.5rem; color: var(--oro); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .faq-question::after { transform: rotate(45deg); }
+    .faq-answer { display: none; padding-top: 14px; font-size: 0.92rem; font-weight: 300; line-height: 1.8; }
+    .faq-item.open .faq-answer { display: block; }
+
+    @media (max-width: 768px) {
+      .step-grid { grid-template-columns: 1fr; gap: 32px; }
+      .step-grid.reverse .step-img { order: -1; }
+      .step-grid.reverse .step-text { order: 0; }
+      .step-img .img-placeholder { min-height: 260px; }
+    }
+  </style>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.metodorinata.it/il-metodo.html">
+  <meta property="og:title" content="Il Metodo RINATA | Come funziona">
+  <meta property="og:description" content="Scopri il metodo che aiuta le donne over 40 a ritrovare energia e benessere in modo naturale.">
+  <meta property="og:image" content="https://www.metodorinata.it/img/marisa-yoga-montagna.jpg">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Metodo RINATA">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Il Metodo RINATA | Come funziona">
+  <meta name="twitter:description" content="Scopri il metodo che aiuta le donne over 40 a ritrovare energia e benessere in modo naturale.">
+  <meta name="twitter:image" content="https://www.metodorinata.it/img/marisa-yoga-montagna.jpg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html" class="site-logo">
+    <img src="img/logo-rinata.png" alt="Metodo RINATA">
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="il-metodo.html" class="active">Il Metodo</a>
+    <a href="percorsi.html">Percorsi</a>
+    <a href="chi-sono.html">Chi Sono</a>
+    <a href="blog.html">Blog</a>
+    <a href="contatti.html">Contatti</a>
+    <a href="percorsi.html#reset" class="btn-nav">Reset 3 Giorni ↓</a>
+  </nav>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="il-metodo.html">Il Metodo</a>
+  <a href="percorsi.html">Percorsi</a>
+  <a href="chi-sono.html">Chi Sono</a>
+  <a href="blog.html">Blog</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="percorsi.html#reset" class="btn-nav-mobile">Reset 3 Giorni — Gratis</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="tag">Il Metodo RINATA</span>
+  <h1>Un metodo che rispetta<br><em>il tuo corpo</em></h1>
+  <p class="lead">Non una dieta. Non uno yoga qualunque. Un sistema integrato che agisce su mente, corpo ed energia — perché dopo i 40 anni il tuo corpo ha bisogno di un approccio diverso.</p>
+</section>
+
+<!-- I 3 PILASTRI — DETTAGLIO -->
+<section class="section section-white">
+  <div class="container">
+
+    <!-- PILASTRO 1 -->
+    <div class="step-grid">
+      <div class="step-text">
+        <div class="step-number">01</div>
+        <span class="tag">Primo pilastro</span>
+        <h2>Psicobiologia</h2>
+        <p>La psicobiologia studia come mente e corpo comunicano attraverso il sistema nervoso e ormonale. Dopo i 40 anni, lo stress cronico, le emozioni non elaborate e i pattern mentali ripetitivi si traducono in sintomi fisici reali: gonfiore, insonnia, stanchezza, aumento di peso.</p>
+        <p>Con il Metodo RINATA impari a riconoscere questi meccanismi e a interrompere i cicli che ti tengono bloccata — non attraverso la forza di volontà, ma attraverso la comprensione profonda del tuo sistema mente-corpo.</p>
+        <ul>
+          <li>Comprensione del sistema nervoso autonomo</li>
+          <li>Tecniche di regolazione emotiva</li>
+          <li>Riconoscimento dei pattern sabotanti</li>
+          <li>Lavoro sulla fame nervosa e sul comfort eating</li>
+        </ul>
+        <a href="percorsi.html" class="btn btn-primary">Inizia il percorso</a>
+      </div>
+      <div class="step-img">
+        <img src="img/marisa-yoga-montagna.jpg" alt="Marisa Pagliuca — Psicobiologia" style="width:100%;min-height:420px;object-fit:cover;border-radius:32px 8px 32px 8px;">
+      </div>
+    </div>
+
+    <div class="divider" style="width:100%;height:1px;background:rgba(184,145,42,0.1);margin:0 0 80px;"></div>
+
+    <!-- PILASTRO 2 -->
+    <div class="step-grid reverse">
+      <div class="step-img">
+        <img src="img/marisa-meditazione.png" alt="Marisa Pagliuca — Neuroyoga" style="width:100%;min-height:420px;object-fit:cover;border-radius:8px 32px 8px 32px;">
+      </div>
+      <div class="step-text">
+        <div class="step-number">02</div>
+        <span class="tag">Secondo pilastro</span>
+        <h2>Neuroyoga</h2>
+        <p>Il Neuroyoga non è yoga tradizionale. È una pratica specifica che integra movimenti consapevoli, respirazione regolata e tecniche di mindfulness per agire direttamente sul sistema nervoso — riducendo il cortisolo, migliorando il sonno e riattivando la vitalità.</p>
+        <p>Le sessioni sono brevi (10-20 minuti), efficaci e pensate per le donne dai 40 anni: nessuna posizione difficile, nessun dolore, solo movimento intelligente che il tuo corpo capisce e apprezza.</p>
+        <ul>
+          <li>Sessioni da 10 a 20 minuti</li>
+          <li>Riduzione del cortisolo e dello stress</li>
+          <li>Miglioramento della qualità del sonno</li>
+          <li>Riduzione delle vampate e dei sintomi ormonali</li>
+        </ul>
+        <a href="percorsi.html" class="btn btn-primary">Inizia il percorso</a>
+      </div>
+    </div>
+
+    <div class="divider" style="width:100%;height:1px;background:rgba(184,145,42,0.1);margin:0 0 80px;"></div>
+
+    <!-- PILASTRO 3 -->
+    <div class="step-grid">
+      <div class="step-text">
+        <div class="step-number">03</div>
+        <span class="tag">Terzo pilastro</span>
+        <h2>Nutrizione Funzionale</h2>
+        <p>Dopo i 40 anni il metabolismo cambia, gli ormoni cambiano, le esigenze nutrizionali cambiano. Un'alimentazione generica non basta più. La nutrizione funzionale del Metodo RINATA è progettata specificamente per il corpo femminile in questa fase della vita.</p>
+        <p>Non si tratta di contare calorie o eliminare categorie di alimenti. Si tratta di scegliere i cibi giusti per ridurre l'infiammazione, supportare gli ormoni e dare al tuo corpo l'energia che merita.</p>
+        <ul>
+          <li>Piano alimentare anti-infiammatorio</li>
+          <li>Alimenti che supportano gli estrogeni naturali</li>
+          <li>Protocollo anti-gonfiore immediato</li>
+          <li>Gestione della fame ormonale</li>
+        </ul>
+        <a href="percorsi.html" class="btn btn-primary">Inizia il percorso</a>
+      </div>
+      <div class="step-img">
+        <img src="img/marisa-presentazione.jpg" alt="Marisa Pagliuca — Nutrizione Funzionale" style="width:100%;min-height:420px;object-fit:cover;border-radius:32px 8px 32px 8px;">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-crema">
+  <div class="container-sm">
+    <div class="section-header">
+      <span class="tag">Domande frequenti</span>
+      <h2>Hai qualche dubbio?</h2>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Il Metodo RINATA è adatto a me anche se sono in menopausa?</div>
+      <div class="faq-answer">Assolutamente sì. Il Metodo RINATA è stato pensato proprio per le donne in peri-menopausa e menopausa. I tre pilastri agiscono in modo sinergico sui principali sintomi: vampate, insonnia, gonfiore, stanchezza e sbalzi d'umore.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Devo avere esperienza di yoga per fare il Neuroyoga?</div>
+      <div class="faq-answer">No, nessuna esperienza è necessaria. Il Neuroyoga del Metodo RINATA è accessibile a tutte, indipendentemente dalla forma fisica o dall'esperienza precedente. Le sessioni sono brevi, guidate e adattabili.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Quanto tempo devo dedicare ogni giorno al Metodo?</div>
+      <div class="faq-answer">Il Metodo RINATA è progettato per integrarsi nella vita reale. Bastano 10-20 minuti al giorno per le pratiche di Neuroyoga, più le scelte alimentari che diventano naturali con il tempo. Non è un lavoro a tempo pieno — è un nuovo modo di vivere.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">I risultati sono permanenti?</div>
+      <div class="faq-answer">Il Metodo RINATA non è una soluzione temporanea. Lavorando sui meccanismi profondi di mente e corpo, i cambiamenti diventano parte del tuo stile di vita. Le donne che seguono il metodo riferiscono benefici duraturi anche dopo la fine del percorso.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Posso seguire il metodo se prendo farmaci?</div>
+      <div class="faq-answer">Il Metodo RINATA è un approccio naturale e complementare, non sostitutivo di cure mediche. Se stai seguendo una terapia farmacologica, ti consiglio di consultare il tuo medico prima di iniziare. In ogni caso, il metodo non interferisce con i farmaci più comuni.</div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="contatti.html" class="btn btn-primary">Hai altre domande? Scrivimi</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-testo" style="text-align:center;">
+  <div class="container-sm">
+    <span class="tag" style="color:var(--oro);">Inizia ora</span>
+    <h2 style="color:var(--oro-light);margin-bottom:16px;">Pronta a scoprire il Metodo?</h2>
+    <p style="color:rgba(242,232,213,0.8);margin-bottom:36px;">Inizia con il Reset gratuito di 3 giorni — il modo più semplice per sperimentare il Metodo RINATA sulla tua pelle.</p>
+    <div class="hero-btns" style="justify-content:center;">
+      <a href="https://mentecorpoenergia.it/rinata-reset-3-giorni/" target="_blank" class="btn btn-white">Inizia il Reset gratuito</a>
+      <a href="percorsi.html" class="btn btn-secondary" style="color:var(--oro-light);border-color:var(--oro-light);">Tutti i percorsi</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="img/logo-rinata.png" alt="Metodo RINATA" class="footer-logo">
+      <p>Il Metodo RINATA 40+ accompagna le donne verso un benessere autentico e duraturo, attraverso psicobiologia, Neuroyoga e nutrizione funzionale.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <a href="index.html">Home</a>
+      <a href="il-metodo.html">Il Metodo</a>
+      <a href="percorsi.html">Percorsi</a>
+      <a href="chi-sono.html">Chi Sono</a>
+      <a href="blog.html">Blog</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+    <div class="footer-col">
+      <h4>Percorsi</h4>
+      <a href="percorsi.html#reset">Reset 3 Giorni — Gratis</a>
+      <a href="percorsi.html#reset7">Reset 7 Giorni</a>
+      <a href="percorsi.html#retreat">Day Retreat</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <p>📧 <a href="mailto:info@metodorinata.it">info@metodorinata.it</a></p>
+      <p>📸 <a href="https://www.instagram.com/marisapagliucarinata" target="_blank">@marisapagliucarinata</a></p>
+      <p>📍 Versilia, Toscana</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Metodo RINATA — Marisa Pagliuca. Tutti i diritti riservati.</span>
+    <span><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="cookie.html">Cookie Policy</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(function(q){
+    q.addEventListener('click', function(){
+      var item = this.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+</script>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/39INSERISCI_NUMERO?text=Ciao%20Marisa%2C%20ho%20visitato%20il%20tuo%20sito%20e%20vorrei%20saperne%20di%20pi%C3%B9%20sul%20Metodo%20RINATA." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Scrivimi su WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.013 22l4.975-1.302A9.956 9.956 0 0011.999 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm0 18a7.946 7.946 0 01-4.05-1.107l-.29-.173-3.012.789.804-2.936-.19-.302A7.952 7.952 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/>
+    </svg>
+  </a>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percorsi — Metodo RINATA 40+</title>
+  <meta name="description" content="Scegli il percorso RINATA giusto per te: Reset 3 Giorni gratuito, Reset 7 Giorni e Day Retreat in Versilia.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* LEGENDA */
+    .legenda {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .legenda-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--testo);
+    }
+    .legenda-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    /* CARDS PERCORSI */
+    .percorsi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      align-items: stretch;
+    }
+    .percorso-card {
+      border-radius: 28px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 40px rgba(122,100,53,0.12);
+      transition: transform 0.25s;
+    }
+    .percorso-card:hover { transform: translateY(-6px); }
+    .percorso-card.featured {
+      border: 2.5px solid var(--oro);
+      transform: scale(1.02);
+    }
+    .percorso-card.featured:hover { transform: scale(1.02) translateY(-6px); }
+
+    .card-header-percorso {
+      padding: 36px 32px 28px;
+      color: var(--crema);
+      position: relative;
+    }
+    .card-header-percorso.verde  { background: linear-gradient(145deg, #8a9e82, #5c7a52); }
+    .card-header-percorso.oro    { background: linear-gradient(145deg, #c9a84c, #9a7230); }
+    .card-header-percorso.viola  { background: linear-gradient(145deg, #9b8bb0, #6d5e8a); }
+
+    .card-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(255,255,255,0.2);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .card-tag-percorso {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      opacity: 0.8;
+      margin-bottom: 10px;
+    }
+    .card-title-percorso {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--crema);
+      margin-bottom: 6px;
+      line-height: 1.1;
+    }
+    .card-subtitle-percorso {
+      font-size: 0.85rem;
+      opacity: 0.85;
+      margin-bottom: 20px;
+    }
+    .card-price-percorso {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--crema);
+      line-height: 1;
+    }
+    .card-price-percorso.small {
+      font-size: 1.1rem;
+      font-weight: 600;
+      opacity: 0.85;
+    }
+
+    .card-body-percorso {
+      background: var(--oro-light);
+      padding: 32px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card-desc-percorso {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--testo);
+      line-height: 1.8;
+    }
+    .card-features-percorso {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .card-features-percorso li {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--testo);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .card-features-percorso li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--verde);
+      font-weight: 700;
+    }
+    .card-btn-percorso {
+      display: block;
+      text-align: center;
+      padding: 15px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      margin-top: auto;
+      transition: all 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+    .card-btn-percorso.verde  { background: #8a9e82; color: var(--crema); }
+    .card-btn-percorso.verde:hover  { background: #5c7a52; }
+    .card-btn-percorso.oro    { background: var(--oro); color: var(--crema); }
+    .card-btn-percorso.oro:hover    { background: #9a7230; }
+    .card-btn-percorso.viola  { background: #9b8bb0; color: #fff; }
+    .card-btn-percorso.viola:hover  { background: #6d5e8a; }
+
+    /* COME FUNZIONA */
+    .step-how {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      padding: 28px;
+      background: var(--bianco);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .step-how-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--oro-light);
+      border: 2px solid var(--oro);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--oro);
+      flex-shrink: 0;
+    }
+    .step-how-text h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .step-how-text p  { font-size: 0.85rem; font-weight: 300; }
+
+    @media (max-width: 900px) {
+      .percorsi-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+      .percorso-card.featured { transform: none; }
+    }
+  </style>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.metodorinata.it/percorsi.html">
+  <meta property="og:title" content="Percorsi RINATA | Reset e programmi personalizzati">
+  <meta property="og:description" content="Scegli il percorso più adatto a te: Reset 3 o 7 giorni, sessioni individuali e programmi mensili.">
+  <meta property="og:image" content="https://www.metodorinata.it/img/marisa-homepage.jpg">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Metodo RINATA">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Percorsi RINATA | Reset e programmi personalizzati">
+  <meta name="twitter:description" content="Scegli il percorso più adatto a te: Reset 3 o 7 giorni, sessioni individuali e programmi mensili.">
+  <meta name="twitter:image" content="https://www.metodorinata.it/img/marisa-homepage.jpg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html" class="site-logo">
+    <img src="img/logo-rinata.png" alt="Metodo RINATA">
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="il-metodo.html">Il Metodo</a>
+    <a href="percorsi.html" class="active">Percorsi</a>
+    <a href="chi-sono.html">Chi Sono</a>
+    <a href="blog.html">Blog</a>
+    <a href="contatti.html">Contatti</a>
+    <a href="#reset" class="btn-nav">Reset 3 Giorni ↓</a>
+  </nav>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="il-metodo.html">Il Metodo</a>
+  <a href="percorsi.html">Percorsi</a>
+  <a href="chi-sono.html">Chi Sono</a>
+  <a href="blog.html">Blog</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="#reset" class="btn-nav-mobile">Reset 3 Giorni — Gratis</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="tag">I Percorsi RINATA</span>
+  <h1>Scegli il percorso<br><em>giusto per te</em></h1>
+  <p class="lead">Ogni donna è diversa. Ogni percorso è pensato per incontrarti esattamente dove sei — online o in presenza.</p>
+  <div class="legenda">
+    <div class="legenda-item"><div class="legenda-dot" style="background:#8a9e82;"></div> Disponibile online</div>
+    <div class="legenda-item"><div class="legenda-dot" style="background:#9b8bb0;"></div> Disponibile in presenza (Versilia)</div>
+    <div class="legenda-item"><div class="legenda-dot" style="background:#c9a84c;"></div> Prossimamente</div>
+  </div>
+</section>
+
+<!-- CARDS PERCORSI -->
+<section class="section section-white" id="reset">
+  <div class="container">
+    <div class="percorsi-grid">
+
+      <!-- RESET 3 GIORNI -->
+      <div class="percorso-card">
+        <div class="card-header-percorso verde">
+          <div class="card-tag-percorso">Punto di partenza</div>
+          <div class="card-title-percorso">Reset 3 Giorni</div>
+          <div class="card-subtitle-percorso">Il tuo primo passo verso il benessere</div>
+          <div class="card-price-percorso">GRATIS</div>
+        </div>
+        <div class="card-body-percorso">
+          <p class="card-desc-percorso">Tre giorni di protocollo guidato per ridurre il gonfiore, calmare la fame nervosa e ritrovare energia. Il modo migliore per iniziare il tuo percorso con il Metodo RINATA.</p>
+          <ul class="card-features-percorso">
+            <li>Piano alimentare anti-gonfiore 3 giorni</li>
+            <li>Routine mattutina Neuroyoga (10 min)</li>
+            <li>Tecniche anti-fame nervosa immediate</li>
+            <li>Checklist benessere quotidiana</li>
+            <li>Accesso alla community privata</li>
+          </ul>
+          <!-- FORM BREVO RESET 3 GIORNI -->
+          <form id="form-reset3" style="display:flex;flex-direction:column;gap:10px;margin-top:auto;">
+            <input type="email" name="email" placeholder="La tua email" required
+              style="padding:13px 18px;border:1px solid rgba(138,158,130,0.4);border-radius:50px;font-size:0.88rem;font-family:inherit;background:#fff;color:var(--testo);outline:none;">
+            <button type="submit" class="card-btn-percorso verde" style="border:none;cursor:pointer;">Ricevi il Reset gratuito →</button>
+          </form>
+          <p style="font-size:0.7rem;color:rgba(61,53,48,0.45);margin-top:8px;">Nessuno spam. Puoi cancellarti in qualsiasi momento.</p>
+          <div id="success-reset3" style="display:none;background:var(--oro-light);border-radius:10px;padding:14px 16px;color:var(--testo-light);font-size:0.88rem;margin-top:10px;">🌿 Perfetto! Controlla la tua email — ti ho inviato il Reset 3 Giorni. Benvenuta!</div>
+        </div>
+      </div>
+
+      <!-- RESET 7 GIORNI -->
+      <div class="percorso-card featured" id="reset7">
+        <div class="card-header-percorso oro">
+          <div class="card-badge">In arrivo</div>
+          <div class="card-tag-percorso">Trasformazione profonda</div>
+          <div class="card-title-percorso">Reset 7 Giorni</div>
+          <div class="card-subtitle-percorso">Una settimana che cambia tutto</div>
+          <div class="card-price-percorso small">Prezzo da annunciare</div>
+        </div>
+        <div class="card-body-percorso">
+          <p class="card-desc-percorso">Un percorso intensivo di 7 giorni con piano alimentare completo, sessioni di Neuroyoga guidate e supporto diretto. Per chi è pronta a fare il salto.</p>
+          <ul class="card-features-percorso">
+            <li>Tutto il Reset 3 Giorni incluso</li>
+            <li>Piano alimentare esteso 7 giorni</li>
+            <li>Sessioni Neuroyoga guidate (video)</li>
+            <li>Supporto diretto via email</li>
+            <li>Workbook psicobiologia applicata</li>
+            <li>Accesso a vita ai materiali</li>
+          </ul>
+          <!-- FORM LISTA ATTESA RESET 7 GIORNI -->
+          <form id="form-reset7" style="display:flex;flex-direction:column;gap:10px;margin-top:auto;">
+            <input type="email" name="email" placeholder="La tua email" required
+              style="padding:13px 18px;border:1px solid rgba(184,145,42,0.3);border-radius:50px;font-size:0.88rem;font-family:inherit;background:#fff;color:var(--testo);outline:none;">
+            <button type="submit" class="card-btn-percorso oro" style="border:none;cursor:pointer;">Avvisami al lancio →</button>
+          </form>
+          <p style="font-size:0.7rem;color:rgba(61,53,48,0.45);margin-top:8px;">Sarai la prima a sapere quando è disponibile.</p>
+          <div id="success-reset7" style="display:none;background:var(--oro-light);border-radius:10px;padding:14px 16px;color:var(--testo-light);font-size:0.88rem;margin-top:10px;">✓ Sei in lista! Ti avviso appena il programma è pronto.</div>
+        </div>
+      </div>
+
+      <!-- DAY RETREAT -->
+      <div class="percorso-card" id="retreat">
+        <div class="card-header-percorso viola">
+          <div class="card-badge">In presenza · Versilia</div>
+          <div class="card-tag-percorso">Immersione totale</div>
+          <div class="card-title-percorso">Day Retreat</div>
+          <div class="card-subtitle-percorso">Una giornata che trasforma</div>
+          <div class="card-price-percorso small">Prossimamente</div>
+        </div>
+        <div class="card-body-percorso">
+          <p class="card-desc-percorso">Una giornata intera in un luogo speciale in Versilia. Neuroyoga, alimentazione consapevole, meditazione e connessione con altre donne nel percorso.</p>
+          <ul class="card-features-percorso">
+            <li>Sessione Neuroyoga mattutina</li>
+            <li>Pranzo consapevole incluso</li>
+            <li>Workshop psicobiologia</li>
+            <li>Meditazione guidata</li>
+            <li>Gruppo piccolo (max 8 persone)</li>
+            <li>Materiali e workbook inclusi</li>
+          </ul>
+          <!-- FORM LISTA ATTESA DAY RETREAT -->
+          <form id="form-retreat" style="display:flex;flex-direction:column;gap:10px;margin-top:auto;">
+            <input type="email" name="email" placeholder="La tua email" required
+              style="padding:13px 18px;border:1px solid rgba(155,139,176,0.35);border-radius:50px;font-size:0.88rem;font-family:inherit;background:#fff;color:var(--testo);outline:none;">
+            <button type="submit" class="card-btn-percorso viola" style="border:none;cursor:pointer;">Iscrivimi alla lista d'attesa →</button>
+          </form>
+          <p style="font-size:0.7rem;color:rgba(61,53,48,0.45);margin-top:8px;">Ti contatto personalmente per i dettagli.</p>
+          <div id="success-retreat" style="display:none;background:var(--oro-light);border-radius:10px;padding:14px 16px;color:var(--testo-light);font-size:0.88rem;margin-top:10px;">✓ Perfetto! Ti contatto appena le date sono confermate.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COME FUNZIONA -->
+<section class="section section-crema">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Come funziona</span>
+      <h2>Tre passi per iniziare</h2>
+      <p>Iniziare con il Metodo RINATA è semplice. Ecco cosa succede dal momento in cui ti iscrivi.</p>
+    </div>
+    <div class="grid-3">
+      <div class="step-how">
+        <div class="step-how-num">1</div>
+        <div class="step-how-text">
+          <h3>Ti iscrivi</h3>
+          <p>Scegli il percorso che fa per te e completi l'iscrizione. Per il Reset 3 Giorni è completamente gratuito.</p>
+        </div>
+      </div>
+      <div class="step-how">
+        <div class="step-how-num">2</div>
+        <div class="step-how-text">
+          <h3>Ricevi i materiali</h3>
+          <p>Entro pochi minuti ricevi via email tutto il materiale: piano alimentare, video Neuroyoga e workbook.</p>
+        </div>
+      </div>
+      <div class="step-how">
+        <div class="step-how-num">3</div>
+        <div class="step-how-text">
+          <h3>Inizi il tuo percorso</h3>
+          <p>Segui il protocollo giorno per giorno. Io sono con te — puoi scrivermi in qualsiasi momento.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-testo" style="text-align:center;">
+  <div class="container-sm">
+    <span class="tag" style="color:var(--oro);">Non sai da dove iniziare?</span>
+    <h2 style="color:var(--oro-light);margin-bottom:16px;">Scrivimi — ti aiuto a scegliere</h2>
+    <p style="color:rgba(242,232,213,0.8);margin-bottom:36px;">Ogni donna ha la sua storia. Se non sai quale percorso fa per te, mandami un messaggio e ne parliamo.</p>
+    <a href="contatti.html" class="btn btn-white">Scrivimi →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="img/logo-rinata.png" alt="Metodo RINATA" class="footer-logo">
+      <p>Il Metodo RINATA 40+ accompagna le donne verso un benessere autentico e duraturo.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <a href="index.html">Home</a>
+      <a href="il-metodo.html">Il Metodo</a>
+      <a href="percorsi.html">Percorsi</a>
+      <a href="chi-sono.html">Chi Sono</a>
+      <a href="blog.html">Blog</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+    <div class="footer-col">
+      <h4>Percorsi</h4>
+      <a href="#reset">Reset 3 Giorni — Gratis</a>
+      <a href="#reset7">Reset 7 Giorni</a>
+      <a href="#retreat">Day Retreat</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <p>📧 <a href="mailto:info@metodorinata.it">info@metodorinata.it</a></p>
+      <p>📸 <a href="https://www.instagram.com/marisapagliucarinata" target="_blank">@marisapagliucarinata</a></p>
+      <p>📍 Versilia, Toscana</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Metodo RINATA — Marisa Pagliuca. Tutti i diritti riservati.</span>
+    <span><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="cookie.html">Cookie Policy</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+// FORM RESET 3 GIORNI — BREVO
+document.getElementById('form-reset3').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var email = this.querySelector('input[type="email"]').value;
+  var btn = this.querySelector('button');
+  btn.textContent = 'Invio...';
+  btn.disabled = true;
+  fetch('https://formsubmit.co/ajax/info@metodorinata.it', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: email, _subject: 'Nuova iscrizione Reset 3 Giorni', fonte: 'Sito Web', _captcha: 'false' })
+  }).then(function() {
+    document.getElementById('success-reset3').style.display = 'block';
+    document.getElementById('form-reset3').style.display = 'none';
+  }).catch(function() {
+    btn.textContent = 'Ricevi il Reset gratuito →';
+    btn.disabled = false;
+    alert('Errore. Scrivi a info@metodorinata.it');
+  });
+});
+
+// FORM LISTA ATTESA RESET 7 GIORNI
+document.getElementById('form-reset7').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var email = this.querySelector('input[type="email"]').value;
+  var btn = this.querySelector('button');
+  btn.textContent = 'Invio...';
+  btn.disabled = true;
+  fetch('https://formsubmit.co/ajax/info@metodorinata.it', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: email, _subject: 'Lista attesa Reset 7 Giorni', _captcha: 'false' })
+  }).then(function() {
+    document.getElementById('success-reset7').style.display = 'block';
+    document.getElementById('form-reset7').style.display = 'none';
+  }).catch(function() {
+    btn.textContent = 'Avvisami al lancio →';
+    btn.disabled = false;
+  });
+});
+
+// FORM LISTA ATTESA DAY RETREAT
+document.getElementById('form-retreat').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var email = this.querySelector('input[type="email"]').value;
+  var btn = this.querySelector('button');
+  btn.textContent = 'Invio...';
+  btn.disabled = true;
+  fetch('https://formsubmit.co/ajax/info@metodorinata.it', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: email, _subject: 'Lista attesa Day Retreat', _captcha: 'false' })
+  }).then(function() {
+    document.getElementById('success-retreat').style.display = 'block';
+    document.getElementById('form-retreat').style.display = 'none';
+  }).catch(function() {
+    btn.textContent = 'Iscrivimi alla lista d\'attesa →';
+    btn.disabled = false;
+  });
+});
+</script>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/39INSERISCI_NUMERO?text=Ciao%20Marisa%2C%20ho%20visitato%20il%20tuo%20sito%20e%20vorrei%20saperne%20di%20pi%C3%B9%20sul%20Metodo%20RINATA." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Scrivimi su WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.013 22l4.975-1.302A9.956 9.956 0 0011.999 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm0 18a7.946 7.946 0 01-4.05-1.107l-.29-.173-3.012.789.804-2.936-.19-.302A7.952 7.952 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/>
+    </svg>
+  </a>
+</body>
+</html>

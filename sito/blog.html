@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Metodo RINATA 40+</title>
+  <meta name="description" content="Articoli su benessere femminile, menopausa, Neuroyoga e nutrizione funzionale per le donne dai 40 anni.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* FILTRI */
+    .blog-filtri {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .filtro-btn {
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1.5px solid rgba(184,145,42,0.25);
+      background: transparent;
+      color: var(--testo);
+      transition: all 0.2s;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .filtro-btn:hover,
+    .filtro-btn.active {
+      background: var(--oro);
+      border-color: var(--oro);
+      color: var(--crema);
+    }
+
+    /* ARTICOLO IN EVIDENZA */
+    .articolo-featured {
+      background: var(--bianco);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 48px;
+    }
+    .articolo-featured .art-img .img-placeholder {
+      min-height: 380px;
+      border-radius: 0;
+      height: 100%;
+    }
+    .articolo-featured .art-body {
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .articolo-featured .art-body .tag { margin-bottom: 12px; }
+    .articolo-featured .art-body h2 { font-size: 2rem; margin-bottom: 16px; }
+    .articolo-featured .art-body .art-excerpt {
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+    .articolo-featured .art-meta {
+      font-size: 0.75rem;
+      color: rgba(61,53,48,0.5);
+      margin-bottom: 20px;
+    }
+
+    /* GRIGLIA ARTICOLI */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .art-card {
+      background: var(--bianco);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+    .art-card:hover { transform: translateY(-4px); }
+    .art-card .art-img .img-placeholder {
+      min-height: 200px;
+      border-radius: 0;
+    }
+    .art-card .art-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .art-card .art-body .tag { margin-bottom: 8px; }
+    .art-card .art-body h3 { font-size: 1.15rem; margin-bottom: 10px; line-height: 1.3; }
+    .art-card .art-body .art-excerpt {
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--testo);
+      margin-bottom: 20px;
+      flex: 1;
+    }
+    .art-card .art-meta {
+      font-size: 0.72rem;
+      color: rgba(61,53,48,0.45);
+      margin-bottom: 16px;
+    }
+    .art-card .art-link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--oro);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+    }
+    .art-card .art-link:hover { gap: 10px; }
+
+    /* NEWSLETTER */
+    .newsletter-box {
+      background: linear-gradient(135deg, var(--verde), var(--verde-dark));
+      border-radius: 28px;
+      padding: 48px;
+      text-align: center;
+      color: var(--crema);
+      margin-top: 64px;
+    }
+    .newsletter-box h2 { color: var(--crema); margin-bottom: 12px; }
+    .newsletter-box p { color: rgba(242,232,213,0.85); margin-bottom: 28px; }
+    .newsletter-form {
+      display: flex;
+      gap: 12px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .newsletter-form input {
+      flex: 1;
+      padding: 14px 20px;
+      border-radius: 50px;
+      border: none;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.9rem;
+      outline: none;
+    }
+    .newsletter-form button {
+      background: var(--oro);
+      color: var(--crema);
+      border: none;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      white-space: nowrap;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      transition: background 0.2s;
+    }
+    .newsletter-form button:hover { background: var(--testo-light); }
+
+    @media (max-width: 900px) {
+      .articolo-featured { grid-template-columns: 1fr; }
+      .articolo-featured .art-img .img-placeholder { min-height: 240px; }
+      .articolo-featured .art-body { padding: 28px; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .newsletter-form { flex-direction: column; }
+      .newsletter-box { padding: 32px 20px; }
+    }
+  </style>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.metodorinata.it/blog.html">
+  <meta property="og:title" content="Blog RINATA | Consigli di benessere per donne over 40">
+  <meta property="og:description" content="Articoli, consigli pratici e ispirazioni per il tuo benessere quotidiano dopo i 40.">
+  <meta property="og:image" content="https://www.metodorinata.it/img/marisa-homepage.jpg">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Metodo RINATA">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog RINATA | Consigli di benessere per donne over 40">
+  <meta name="twitter:description" content="Articoli, consigli pratici e ispirazioni per il tuo benessere quotidiano dopo i 40.">
+  <meta name="twitter:image" content="https://www.metodorinata.it/img/marisa-homepage.jpg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html" class="site-logo">
+    <img src="img/logo-rinata.png" alt="Metodo RINATA">
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="il-metodo.html">Il Metodo</a>
+    <a href="percorsi.html">Percorsi</a>
+    <a href="chi-sono.html">Chi Sono</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="contatti.html">Contatti</a>
+    <a href="percorsi.html#reset" class="btn-nav">Reset 3 Giorni ↓</a>
+  </nav>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="il-metodo.html">Il Metodo</a>
+  <a href="percorsi.html">Percorsi</a>
+  <a href="chi-sono.html">Chi Sono</a>
+  <a href="blog.html">Blog</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="percorsi.html#reset" class="btn-nav-mobile">Reset 3 Giorni — Gratis</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="tag">Blog RINATA</span>
+  <h1>Benessere, ormoni<br><em>e vita vera</em></h1>
+  <p class="lead">Articoli pratici su menopausa, Neuroyoga, nutrizione funzionale e psicobiologia — scritti da Marisa per le donne dai 40 anni.</p>
+  <div class="blog-filtri">
+    <button class="filtro-btn active">Tutti</button>
+    <button class="filtro-btn">Nutrizione</button>
+    <button class="filtro-btn">Neuroyoga</button>
+    <button class="filtro-btn">Menopausa</button>
+    <button class="filtro-btn">Psicobiologia</button>
+    <button class="filtro-btn">Benessere</button>
+  </div>
+</section>
+
+<!-- ARTICOLO IN EVIDENZA -->
+<section class="section section-white" style="padding-top:40px;">
+  <div class="container">
+    <div class="articolo-featured">
+      <div class="art-img">
+        <div class="img-placeholder">
+          <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Immagine articolo in evidenza
+        </div>
+      </div>
+      <div class="art-body">
+        <span class="tag">In evidenza · Menopausa</span>
+        <h2>Perché dopo i 40 anni il tuo corpo cambia — e cosa fare davvero</h2>
+        <p class="art-excerpt">I cambiamenti ormonali della peri-menopausa non sono una malattia. Sono una trasformazione. Scopri cosa sta succedendo nel tuo corpo e come il Metodo RINATA ti aiuta ad attraversarla con energia e serenità.</p>
+        <div class="art-meta">Marisa Pagliuca · 8 min di lettura</div>
+        <a href="https://mentecorpoenergia.it/blog/" target="_blank" class="btn btn-primary" style="align-self:flex-start;">Leggi l'articolo →</a>
+      </div>
+    </div>
+
+    <!-- GRIGLIA ARTICOLI -->
+    <div class="blog-grid">
+
+      <div class="art-card">
+        <div class="art-img">
+          <div class="img-placeholder" style="min-height:180px;">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+        </div>
+        <div class="art-body">
+          <span class="tag">Nutrizione</span>
+          <h3>5 alimenti che riducono il gonfiore in 24 ore</h3>
+          <p class="art-excerpt">Il gonfiore addominale dopo i 40 anni è spesso ormonale. Questi 5 alimenti agiscono direttamente sull'infiammazione e ti aiutano a sentirti più leggera in tempi brevi.</p>
+          <div class="art-meta">5 min di lettura</div>
+          <a href="https://mentecorpoenergia.it/blog/" target="_blank" class="art-link">Leggi l'articolo <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="art-card">
+        <div class="art-img">
+          <div class="img-placeholder" style="min-height:180px;">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+        </div>
+        <div class="art-body">
+          <span class="tag">Neuroyoga</span>
+          <h3>La routine mattutina di 10 minuti che cambia tutto</h3>
+          <p class="art-excerpt">Dieci minuti al mattino con il Neuroyoga possono trasformare la qualità della tua giornata. Ecco la sequenza esatta che uso con le mie clienti.</p>
+          <div class="art-meta">6 min di lettura</div>
+          <a href="https://mentecorpoenergia.it/blog/" target="_blank" class="art-link">Leggi l'articolo <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="art-card">
+        <div class="art-img">
+          <div class="img-placeholder" style="min-height:180px;">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+        </div>
+        <div class="art-body">
+          <span class="tag">Psicobiologia</span>
+          <h3>Fame nervosa: perché mangi quando sei stressata</h3>
+          <p class="art-excerpt">La fame nervosa non è una questione di forza di volontà. È una risposta biologica allo stress. Capire il meccanismo è il primo passo per liberarsene.</p>
+          <div class="art-meta">7 min di lettura</div>
+          <a href="https://mentecorpoenergia.it/blog/" target="_blank" class="art-link">Leggi l'articolo <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="art-card">
+        <div class="art-img">
+          <div class="img-placeholder" style="min-height:180px;">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+        </div>
+        <div class="art-body">
+          <span class="tag">Menopausa</span>
+          <h3>Vampate di calore: cause naturali e rimedi efficaci</h3>
+          <p class="art-excerpt">Le vampate non sono inevitabili. Esistono strategie naturali — alimentari, posturali e di respirazione — che le riducono significativamente.</p>
+          <div class="art-meta">6 min di lettura</div>
+          <a href="https://mentecorpoenergia.it/blog/" target="_blank" class="art-link">Leggi l'articolo <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="art-card">
+        <div class="art-img">
+          <div class="img-placeholder" style="min-height:180px;">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+        </div>
+        <div class="art-body">
+          <span class="tag">Benessere</span>
+          <h3>Dormire meglio dopo i 40: il protocollo serale RINATA</h3>
+          <p class="art-excerpt">L'insonnia in menopausa è uno dei sintomi più debilitanti. Questo protocollo serale di 20 minuti aiuta il sistema nervoso a rilassarsi e prepara il corpo al sonno profondo.</p>
+          <div class="art-meta">5 min di lettura</div>
+          <a href="https://mentecorpoenergia.it/blog/" target="_blank" class="art-link">Leggi l'articolo <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="art-card">
+        <div class="art-img">
+          <div class="img-placeholder" style="min-height:180px;">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+        </div>
+        <div class="art-body">
+          <span class="tag">Nutrizione</span>
+          <h3>Proteine e ormoni: perché ne hai bisogno di più dopo i 40</h3>
+          <p class="art-excerpt">Dopo i 40 anni il fabbisogno proteico aumenta. Non per costruire muscoli, ma per supportare gli ormoni, la pelle e l'energia. Scopri quante ne servono davvero.</p>
+          <div class="art-meta">6 min di lettura</div>
+          <a href="https://mentecorpoenergia.it/blog/" target="_blank" class="art-link">Leggi l'articolo <span>→</span></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter-box">
+      <span class="tag" style="color:rgba(242,232,213,0.7);">Newsletter RINATA</span>
+      <h2>Ricevi i nuovi articoli ogni settimana</h2>
+      <p>Iscriviti alla newsletter e ricevi consigli pratici su benessere, ormoni e Neuroyoga — direttamente nella tua casella email.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="La tua email" required>
+        <button type="submit">Iscriviti</button>
+      </form>
+      <p style="font-size:0.72rem;margin-top:12px;color:rgba(242,232,213,0.5);">Nessuno spam. Cancellazione in un clic.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="img/logo-rinata.png" alt="Metodo RINATA" class="footer-logo">
+      <p>Il Metodo RINATA 40+ accompagna le donne verso un benessere autentico e duraturo.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <a href="index.html">Home</a>
+      <a href="il-metodo.html">Il Metodo</a>
+      <a href="percorsi.html">Percorsi</a>
+      <a href="chi-sono.html">Chi Sono</a>
+      <a href="blog.html">Blog</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+    <div class="footer-col">
+      <h4>Percorsi</h4>
+      <a href="percorsi.html#reset">Reset 3 Giorni — Gratis</a>
+      <a href="percorsi.html#reset7">Reset 7 Giorni</a>
+      <a href="percorsi.html#retreat">Day Retreat</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <p>📧 <a href="mailto:info@metodorinata.it">info@metodorinata.it</a></p>
+      <p>📸 <a href="https://www.instagram.com/marisapagliucarinata" target="_blank">@marisapagliucarinata</a></p>
+      <p>📍 Versilia, Toscana</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Metodo RINATA — Marisa Pagliuca. Tutti i diritti riservati.</span>
+    <span><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="cookie.html">Cookie Policy</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Filtri blog
+  document.querySelectorAll('.filtro-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.filtro-btn').forEach(function(b){ b.classList.remove('active'); });
+      this.classList.add('active');
+    });
+  });
+</script>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/39INSERISCI_NUMERO?text=Ciao%20Marisa%2C%20ho%20visitato%20il%20tuo%20sito%20e%20vorrei%20saperne%20di%20pi%C3%B9%20sul%20Metodo%20RINATA." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Scrivimi su WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.013 22l4.975-1.302A9.956 9.956 0 0011.999 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm0 18a7.946 7.946 0 01-4.05-1.107l-.29-.173-3.012.789.804-2.936-.19-.302A7.952 7.952 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/>
+    </svg>
+  </a>
+</body>
+</html>
