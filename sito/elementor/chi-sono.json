@@ -1,0 +1,56 @@
+{
+  "version": "0.4",
+  "title": "Chi Sono – RINATA 40+",
+  "type": "page",
+  "content": [
+    {
+      "id": "f23354f",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "fdf40fa",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "3c2f41c",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<!-- HEADER -->\n<header class=\"site-header\">\n  <a href=\"index.html\" class=\"site-logo\">\n    <img src=\"img/logo-rinata.png\" alt=\"Metodo RINATA\">\n  </a>\n  <nav class=\"site-nav\">\n    <a href=\"index.html\">Home</a>\n    <a href=\"il-metodo.html\">Il Metodo</a>\n    <a href=\"percorsi.html\">Percorsi</a>\n    <a href=\"chi-sono.html\" class=\"active\">Chi Sono</a>\n    <a href=\"blog.html\">Blog</a>\n    <a href=\"contatti.html\">Contatti</a>\n    <a href=\"percorsi.html#reset\" class=\"btn-nav\">Reset 3 Giorni ↓</a>\n  </nav>\n  <button class=\"hamburger\" aria-label=\"Menu\"><span></span><span></span><span></span></button>\n</header>\n<nav class=\"mobile-menu\">\n  <a href=\"index.html\">Home</a>\n  <a href=\"il-metodo.html\">Il Metodo</a>\n  <a href=\"percorsi.html\">Percorsi</a>\n  <a href=\"chi-sono.html\">Chi Sono</a>\n  <a href=\"blog.html\">Blog</a>\n  <a href=\"contatti.html\">Contatti</a>\n  <a href=\"percorsi.html#reset\" class=\"btn-nav-mobile\">Reset 3 Giorni — Gratis</a>\n</nav>\n\n<!-- BIO PRINCIPALE -->\n<section class=\"section section-crema bio-section\" style=\"padding-top:60px;\">\n  <div class=\"container\">\n    <div class=\"grid-2\">\n      <div class=\"bio-img-col\">\n        <img src=\"img/marisa-meditazione.png\" alt=\"Marisa Pagliuca\" style=\"width:100%;object-fit:cover;border-radius:8px 40px 8px 40px;\">\n        <img src=\"img/marisa-presentazione.jpg\" alt=\"Marisa Pagliuca presenta il suo libro\" style=\"width:100%;object-fit:cover;border-radius:20px;margin-top:20px;\">\n      </div>\n      <div class=\"bio-text\">\n        <span class=\"tag\">Chi sono</span>\n        <h1>Marisa Pagliuca</h1>\n        <p class=\"bio-ruolo\">Formatrice · Autrice · Creatrice del Metodo RINATA 40+</p>\n\n        <p>Mi chiamo Marisa Pagliuca e da oltre 15 anni accompagno le donne in un percorso di trasformazione profonda che unisce scienza e naturalezza.</p>\n\n        <p>Ho studiato psicobiologia, mi sono formata nel Neuroyoga e ho approfondito la nutrizione funzionale femminile. Ma la cosa più importante che ho imparato viene dalla mia esperienza diretta: il corpo femminile dopo i 40 anni ha bisogno di un approccio completamente diverso.</p>\n\n        <p>Ho attraversato io stessa quella fase di stanchezza, gonfiore, sbalzi d'umore e sensazione di non riconoscersi più. E da quella trasformazione personale è nato il Metodo RINATA — un sistema che ho poi condiviso con oltre 500 donne, vedendo risultati che mi emozionano ancora oggi.</p>\n\n        <div class=\"bio-valori\">\n          <h3>I miei valori fondamentali</h3>\n          <ul>\n            <li>Il corpo femminile merita rispetto, non punizione</li>\n            <li>Il benessere vero è sostenibile e gioioso</li>\n            <li>La scienza e la natura non si escludono</li>\n            <li>Ogni donna è diversa — il metodo si adatta a lei</li>\n            <li>La trasformazione parte sempre dall'interno</li>\n          </ul>\n        </div>\n\n        <p>Ho scritto 3 libri sul benessere femminile, ho tenuto workshop e retreat in tutta Italia, e ogni giorno mi sveglio con la stessa missione: aiutare le donne a ritrovare se stesse.</p>\n\n        <div class=\"firma-grande\">Marisa Pagliuca</div>\n        <div style=\"display:flex;gap:16px;flex-wrap:wrap;\">\n          <a href=\"percorsi.html\" class=\"btn btn-primary\">Inizia il tuo percorso</a>\n          <a href=\"contatti.html\" class=\"btn btn-secondary\">Scrivimi</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<!-- I LIBRI -->\n<section class=\"section section-white\">\n  <div class=\"container\">\n    <div class=\"section-header\">\n      <span class=\"tag\">Le mie pubblicazioni</span>\n      <h2>I miei libri</h2>\n      <p>Tre libri che raccolgono anni di ricerca, esperienza e trasformazioni reali.</p>\n    </div>\n    <div class=\"grid-3\">\n      <div class=\"libro-card\" style=\"flex-direction:column;\">\n        <img src=\"img/libro-lamorechimanca.jpg\" alt=\"L'Amore che Manca — Eva Rei\" style=\"width:100%;height:220px;object-fit:cover;border-radius:var(--radius) var(--radius) 0 0;\">\n        <div class=\"libro-info\">\n          <span class=\"tag\">Primo libro</span>\n          <h3>L'Amore che Manca</h3>\n          <p>Come allungare il benessere con il nuovo metodo di psicologia profonda. Scritto con lo pseudonimo Eva Rei.</p>\n        </div>\n      </div>\n      <div class=\"libro-card\" style=\"flex-direction:column;\">\n        <img src=\"img/libro-comeseibellamente.jpg\" alt=\"Come sei bella MENTE — Eva Rei\" style=\"width:100%;height:220px;object-fit:cover;border-radius:var(--radius) var(--radius) 0 0;\">\n        <div class=\"libro-info\">\n          <span class=\"tag\">Secondo libro</span>\n          <h3>Come sei bella MENTE</h3>\n          <p>Un viaggio nella bellezza interiore femminile attraverso la psicobiologia e la consapevolezza del corpo.</p>\n        </div>\n      </div>\n      <div class=\"libro-card\" style=\"flex-direction:column;\">\n        <div style=\"background:var(--oro-light);height:220px;border-radius:var(--radius) var(--radius) 0 0;display:flex;align-items:center;justify-content:center;\">\n          <span style=\"font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--oro);text-align:center;padding:20px;\">Terzo libro<br><em>in arrivo</em></span>\n        </div>\n        <div class=\"libro-info\">\n          <span class=\"tag\">Prossimamente</span>\n          <h3>Metodo RINATA 40+</h3>\n          <p>Il manuale completo del Metodo RINATA — psicobiologia, Neuroyoga e nutrizione funzionale per le donne dai 40 anni.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<!-- TIMELINE -->\n<section class=\"section section-oro\">\n  <div class=\"container\">\n    <div class=\"grid-2\" style=\"gap:64px;\">\n      <div>\n        <div class=\"section-header\" style=\"text-align:left;margin-bottom:40px;\">\n          <span class=\"tag\">Il mio percorso</span>\n          <h2>Come sono arrivata qui</h2>\n        </div>\n        <div class=\"timeline\">\n          <div class=\"timeline-item\">\n            <div class=\"timeline-anno\">Gli inizi</div>\n            <h3>La formazione</h3>\n            <p>Inizio il mio percorso di studi in psicobiologia e benessere femminile, appassionandomi al rapporto tra mente, corpo e ormoni.</p>\n          </div>\n          <div class=\"timeline-item\">\n            <div class=\"timeline-anno\">La svolta</div>\n            <h3>La mia trasformazione personale</h3>\n            <p>Attraverso la mia esperienza personale con la peri-menopausa, scopro che il corpo femminile ha bisogno di un approccio completamente diverso dopo i 40 anni.</p>\n          </div>\n          <div class=\"timeline-item\">\n            <div class=\"timeline-anno\">Il metodo</div>\n            <h3>Nasce il Metodo RINATA</h3>\n            <p>Integro psicobiologia, Neuroyoga e nutrizione funzionale in un sistema coerente e replicabile. Le prime donne ottengono risultati straordinari.</p>\n          </div>\n          <div class=\"timeline-item\">\n            <div class=\"timeline-anno\">Oggi</div>\n            <h3>500+ donne trasformate</h3>\n            <p>Il Metodo RINATA ha accompagnato oltre 500 donne. Continuo a formarmi, scrivere e condividere — perché questa missione non finisce mai.</p>\n          </div>\n        </div>\n      </div>\n      <div>\n        <img src=\"img/marisa-meditazione.png\" alt=\"Marisa Pagliuca in meditazione\" style=\"width:100%;min-height:500px;object-fit:cover;border-radius:var(--radius);\">\n      </div>\n    </div>\n  </div>\n</section>\n\n<!-- CTA -->\n<section class=\"section section-testo\" style=\"text-align:center;\">\n  <div class=\"container-sm\">\n    <span class=\"tag\" style=\"color:var(--oro);\">Inizia ora</span>\n    <h2 style=\"color:var(--oro-light);margin-bottom:16px;\">Pronta a iniziare il tuo percorso?</h2>\n    <p style=\"color:rgba(242,232,213,0.8);margin-bottom:36px;\">Inizia con il Reset gratuito di 3 giorni e scopri cosa può fare il Metodo RINATA per te.</p>\n    <div class=\"hero-btns\" style=\"justify-content:center;\">\n      <a href=\"https://mentecorpoenergia.it/rinata-reset-3-giorni/\" target=\"_blank\" class=\"btn btn-white\">Inizia il Reset gratuito</a>\n      <a href=\"contatti.html\" class=\"btn btn-secondary\" style=\"color:var(--oro-light);border-color:var(--oro-light);\">Scrivimi</a>\n    </div>\n  </div>\n</section>\n\n<!-- FOOTER -->\n<footer class=\"site-footer\">\n  <div class=\"footer-inner\">\n    <div class=\"footer-brand\">\n      <img src=\"img/logo-rinata.png\" alt=\"Metodo RINATA\" class=\"footer-logo\">\n      <p>Il Metodo RINATA 40+ accompagna le donne verso un benessere autentico e duraturo.</p>\n    </div>\n    <div class=\"footer-col\">\n      <h4>Navigazione</h4>\n      <a href=\"index.html\">Home</a>\n      <a href=\"il-metodo.html\">Il Metodo</a>\n      <a href=\"percorsi.html\">Percorsi</a>\n      <a href=\"chi-sono.html\">Chi Sono</a>\n      <a href=\"blog.html\">Blog</a>\n      <a href=\"contatti.html\">Contatti</a>\n    </div>\n    <div class=\"footer-col\">\n      <h4>Percorsi</h4>\n      <a href=\"percorsi.html#reset\">Reset 3 Giorni — Gratis</a>\n      <a href=\"percorsi.html#reset7\">Reset 7 Giorni</a>\n      <a href=\"percorsi.html#retreat\">Day Retreat</a>\n    </div>\n    <div class=\"footer-col\">\n      <h4>Contatti</h4>\n      <p>📧 <a href=\"mailto:info@metodorinata.it\">info@metodorinata.it</a></p>\n      <p>📸 <a href=\"https://www.instagram.com/marisapagliucarinata\" target=\"_blank\">@marisapagliucarinata</a></p>\n      <p>📍 Versilia, Toscana</p>\n    </div>\n  </div>\n  <div class=\"footer-bottom\">\n    <span>© 2026 Metodo RINATA — Marisa Pagliuca. Tutti i diritti riservati.</span>\n    <span><a href=\"privacy.html\">Privacy Policy</a> &nbsp;|&nbsp; <a href=\"cookie.html\">Cookie Policy</a></span>\n  </div>\n</footer>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "elementor_page_settings": {}
+  }
+}

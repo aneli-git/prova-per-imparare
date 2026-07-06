@@ -1,0 +1,97 @@
+============================================================
+  ISTRUZIONI IMPORT SU ELEMENTOR — Metodo RINATA 40+
+============================================================
+
+STRUTTURA CARTELLA
+------------------
+elementor/
+  ├── index.json          → pagina Home
+  ├── il-metodo.json      → pagina Il Metodo
+  ├── percorsi.json       → pagina Percorsi
+  ├── chi-sono.json       → pagina Chi Sono
+  ├── blog.json           → pagina Blog
+  ├── contatti.json       → pagina Contatti
+  ├── global-style.css    → CSS globale (copia in Elementor)
+  ├── global-script.js    → JS globale (copia in Elementor)
+  └── ISTRUZIONI-ELEMENTOR.txt
+
+============================================================
+STEP 1 — CSS GLOBALE
+============================================================
+1. Vai su  WordPress Admin → Elementor → Impostazioni sito
+   oppure: Aspetto → Personalizza → CSS aggiuntivo
+2. Incolla il contenuto di  global-style.css
+3. Salva
+
+============================================================
+STEP 2 — JAVASCRIPT GLOBALE
+============================================================
+OPZIONE A (Elementor Pro):
+  1. Elementor → Codice personalizzato
+  2. Aggiungi snippet: posizione "Fine del body (<body>)"
+  3. Incolla il contenuto di  global-script.js
+  4. Pubblica
+
+OPZIONE B (plugin gratuito "Insert Headers and Footers"):
+  1. Installa il plugin
+  2. Incolla global-script.js nel campo "Scripts in Footer"
+  3. Salva
+
+============================================================
+STEP 3 — CREARE LE PAGINE E IMPORTARE I TEMPLATE
+============================================================
+Per ogni pagina (ripeti 6 volte):
+
+  a. WordPress Admin → Pagine → Aggiungi nuova
+  b. Dai un titolo alla pagina (es. "Home", "Il Metodo"…)
+  c. Clicca "Modifica con Elementor"
+  d. Nell'editor Elementor: icona cartella in basso (Aggiungi template)
+     OPPURE: Menu hamburger → Importa modello
+  e. Vai alla scheda "I miei template" → Importa template
+  f. Carica il file .json corrispondente (es. index.json per Home)
+  g. Clicca "Inserisci"
+  h. Pubblica la pagina
+
+Ripeti per tutti e 6 i file .json.
+
+============================================================
+STEP 4 — IMPOSTARE I PERMALINK
+============================================================
+Imposta ogni pagina al suo slug corretto:
+  Home       → pagina frontale (Impostazioni → Lettura)
+  il-metodo  → slug: il-metodo
+  percorsi   → slug: percorsi
+  chi-sono   → slug: chi-sono
+  blog       → slug: blog
+  contatti   → slug: contatti
+
+============================================================
+STEP 5 — IMMAGINI
+============================================================
+Carica nella Libreria Media di WordPress:
+  • logo-rinata.png
+  • marisa-homepage.jpg
+  • marisa-homepage1.jpg
+  • marisa-yoga-montagna.jpg
+  • marisa-meditazione.png
+  • marisa-presentazione.jpg
+
+Poi aggiorna i percorsi img/ nelle pagine Elementor
+(click sull'immagine → cambia URL).
+
+============================================================
+PAGINA FRONTALE
+============================================================
+WordPress Admin → Impostazioni → Lettura
+→ "La tua homepage mostra": Pagina statica
+→ Homepage: seleziona "Home"
+
+============================================================
+NOTE
+============================================================
+• Elementor Free è sufficiente per importare i template
+• I template usano HTML widget (supportato nella versione Free)
+• Elementor Pro aggiunge il Custom Code per il JS
+• Se usi un tema Elementor Hello o Astra, le pagine
+  saranno fullwidth senza conflitti di stile
+============================================================

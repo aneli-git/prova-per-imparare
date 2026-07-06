@@ -1,0 +1,56 @@
+{
+  "version": "0.4",
+  "title": "Contatti – RINATA 40+",
+  "type": "page",
+  "content": [
+    {
+      "id": "703ce5b",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "4f38b9d",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "b590dc9",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<!-- HEADER -->\n<header class=\"site-header\">\n  <a href=\"index.html\" class=\"site-logo\">\n    <img src=\"img/logo-rinata.png\" alt=\"Metodo RINATA\">\n  </a>\n  <nav class=\"site-nav\">\n    <a href=\"index.html\">Home</a>\n    <a href=\"il-metodo.html\">Il Metodo</a>\n    <a href=\"percorsi.html\">Percorsi</a>\n    <a href=\"chi-sono.html\">Chi Sono</a>\n    <a href=\"blog.html\">Blog</a>\n    <a href=\"contatti.html\" class=\"active\">Contatti</a>\n    <a href=\"percorsi.html#reset\" class=\"btn-nav\">Reset 3 Giorni ↓</a>\n  </nav>\n  <button class=\"hamburger\" aria-label=\"Menu\"><span></span><span></span><span></span></button>\n</header>\n<nav class=\"mobile-menu\">\n  <a href=\"index.html\">Home</a>\n  <a href=\"il-metodo.html\">Il Metodo</a>\n  <a href=\"percorsi.html\">Percorsi</a>\n  <a href=\"chi-sono.html\">Chi Sono</a>\n  <a href=\"blog.html\">Blog</a>\n  <a href=\"contatti.html\">Contatti</a>\n  <a href=\"percorsi.html#reset\" class=\"btn-nav-mobile\">Reset 3 Giorni — Gratis</a>\n</nav>\n\n<!-- HERO -->\n<section class=\"hero\">\n  <span class=\"tag\">Contatti</span>\n  <h1>Scrivimi.<br><em>Sono qui.</em></h1>\n  <p class=\"lead\">Hai domande sul Metodo RINATA? Vuoi capire quale percorso fa per te? Scrivimi — rispondo personalmente entro 24-48 ore.</p>\n</section>\n\n<!-- FORM + INFO -->\n<section class=\"section section-crema\" style=\"padding-top:40px;\">\n  <div class=\"container\">\n    <div class=\"contatti-grid\">\n\n      <!-- FORM -->\n      <div class=\"form-box\">\n        <h2>Inviami un messaggio</h2>\n        <p class=\"form-note\">Rispondo entro 24-48 ore nei giorni lavorativi. Ogni messaggio viene letto da me personalmente.</p>\n\n        <form id=\"rinata-contact-form\">\n          <div class=\"form-group\">\n            <label for=\"nome\">Nome *</label>\n            <input type=\"text\" id=\"nome\" name=\"nome\" placeholder=\"Il tuo nome\" required>\n          </div>\n          <div class=\"form-group\">\n            <label for=\"email\">Email *</label>\n            <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"La tua email\" required>\n          </div>\n          <div class=\"form-group\">\n            <label for=\"argomento\">Di cosa vuoi parlarmi?</label>\n            <select id=\"argomento\" name=\"argomento\">\n              <option value=\"\">Seleziona un argomento</option>\n              <option value=\"reset3\">Reset 3 Giorni gratuito</option>\n              <option value=\"reset7\">Reset 7 Giorni</option>\n              <option value=\"retreat\">Day Retreat in Versilia</option>\n              <option value=\"metodo\">Informazioni sul Metodo RINATA</option>\n              <option value=\"altro\">Altro</option>\n            </select>\n          </div>\n          <div class=\"form-group\">\n            <label for=\"messaggio\">Il tuo messaggio *</label>\n            <textarea id=\"messaggio\" name=\"messaggio\" placeholder=\"Scrivi qui la tua domanda o raccontami brevemente la tua situazione...\" required></textarea>\n          </div>\n          <div class=\"form-group privacy-group\">\n            <input type=\"checkbox\" id=\"privacy\" name=\"privacy\" required>\n            <label for=\"privacy\">Ho letto e accetto la <a href=\"privacy.html\">Privacy Policy</a>. Acconsento al trattamento dei miei dati personali per ricevere una risposta.</label>\n          </div>\n          <button type=\"submit\" class=\"btn-submit\">Invia il messaggio</button>\n          <p class=\"privacy-fine\">I tuoi dati sono al sicuro. Non condivido mai le informazioni personali con terze parti.</p>\n          <div class=\"success-msg\" id=\"rinata-success\">\n            ✓ Messaggio inviato con successo! Ti rispondo entro 24-48 ore. 🌿\n          </div>\n        </form>\n      </div>\n\n      <!-- INFO -->\n      <div class=\"info-col\">\n        <div class=\"info-card\">\n          <div class=\"icon\">✉️</div>\n          <h3>Scrivimi direttamente</h3>\n          <a href=\"mailto:info@metodorinata.it\">info@metodorinata.it</a>\n          <p>Rispondo personalmente entro 24-48 ore nei giorni lavorativi.</p>\n        </div>\n        <div class=\"info-card\">\n          <div class=\"icon\">📸</div>\n          <h3>Seguimi su Instagram</h3>\n          <a href=\"https://www.instagram.com/marisapagliucarinata\" target=\"_blank\">@marisapagliucarinata</a>\n          <p>Contenuti quotidiani su benessere, ormoni e Neuroyoga. Puoi anche scrivermi in DM.</p>\n        </div>\n        <div class=\"info-card\">\n          <div class=\"icon\">📍</div>\n          <h3>Dove sono</h3>\n          <p>Versilia, Toscana</p>\n          <p>I percorsi online sono disponibili ovunque in Italia. I retreat si tengono in Versilia.</p>\n          <div class=\"mappa-placeholder\">\n            📍 Versilia, Toscana\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<!-- CTA FINALE -->\n<section class=\"section section-testo\" style=\"text-align:center;\">\n  <div class=\"container-sm\">\n    <span class=\"tag\" style=\"color:var(--oro);\">Non sai da dove iniziare?</span>\n    <h2 style=\"color:var(--oro-light);margin-bottom:16px;\">Parti dal Reset gratuito</h2>\n    <p style=\"color:rgba(242,232,213,0.8);margin-bottom:36px;\">Il primo passo è sempre il più importante. Tre giorni gratuiti per sentire la differenza.</p>\n    <a href=\"https://mentecorpoenergia.it/rinata-reset-3-giorni/\" target=\"_blank\" class=\"btn btn-white\">Inizia il Reset gratuito →</a>\n  </div>\n</section>\n\n<!-- FOOTER -->\n<footer class=\"site-footer\">\n  <div class=\"footer-inner\">\n    <div class=\"footer-brand\">\n      <img src=\"img/logo-rinata.png\" alt=\"Metodo RINATA\" class=\"footer-logo\">\n      <p>Il Metodo RINATA 40+ accompagna le donne verso un benessere autentico e duraturo.</p>\n    </div>\n    <div class=\"footer-col\">\n      <h4>Navigazione</h4>\n      <a href=\"index.html\">Home</a>\n      <a href=\"il-metodo.html\">Il Metodo</a>\n      <a href=\"percorsi.html\">Percorsi</a>\n      <a href=\"chi-sono.html\">Chi Sono</a>\n      <a href=\"blog.html\">Blog</a>\n      <a href=\"contatti.html\">Contatti</a>\n    </div>\n    <div class=\"footer-col\">\n      <h4>Percorsi</h4>\n      <a href=\"percorsi.html#reset\">Reset 3 Giorni — Gratis</a>\n      <a href=\"percorsi.html#reset7\">Reset 7 Giorni</a>\n      <a href=\"percorsi.html#retreat\">Day Retreat</a>\n    </div>\n    <div class=\"footer-col\">\n      <h4>Contatti</h4>\n      <p>📧 <a href=\"mailto:info@metodorinata.it\">info@metodorinata.it</a></p>\n      <p>📸 <a href=\"https://www.instagram.com/marisapagliucarinata\" target=\"_blank\">@marisapagliucarinata</a></p>\n      <p>📍 Versilia, Toscana</p>\n    </div>\n  </div>\n  <div class=\"footer-bottom\">\n    <span>© 2026 Metodo RINATA — Marisa Pagliuca. Tutti i diritti riservati.</span>\n    <span><a href=\"privacy.html\">Privacy Policy</a> &nbsp;|&nbsp; <a href=\"cookie.html\">Cookie Policy</a></span>\n  </div>\n</footer>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "elementor_page_settings": {}
+  }
+}
